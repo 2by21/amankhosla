@@ -1,0 +1,77 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    width: 11195px;
+    position:absolute;
+    top:0px;
+    left:0px;
+    bottom:0px;
+}
+
+.section{
+    margin:0px;
+    bottom:0px;
+    width: 2000px;
+    float:left;
+    height:100%;
+}
+
+#section1 {
+	width: 1600px;
+	background: url(boob_elephant_image.png) top left no-repeat;
+	background-size: auto 100%;
+}
+
+#section2 {
+	width: 600px;
+	height: 100%;
+	overflow: hidden;
+}
+
+#section3 {
+	background: url(bum_to_wolf.png) top left no-repeat;
+	background-size: auto 100%;
+	width: 5060px;
+}
+
+#section4 {
+	width: 800px;
+}
+
+#section4 ul li {
+	list-style-type: none;
+}
+
+#section5 {
+	width: 1935px;
+	background: url(big_face_image.png) top left no-repeat;
+	background-size: auto 100%;
+}
+
+#section6 {
+	width: 1200px;
+}
+
+#section2 .post-container ul {
+	width: 100%;
+}
+
+#section2 .post-container {
+	position: relative;
+	top: 30%;
+}
+
+#section2 .post-container ul li {
+	width: 20%;
+	margin-right: 30px;
+	float: left;
+	list-style-type: none;
+}
+
+#section2 .post-container ul li p {
+	overflow: scroll;
+	height: 200px;
+}
