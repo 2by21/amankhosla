@@ -1,77 +1,144 @@
-*{
-    margin:0;
-    padding:0;
+@font-face {
+    font-family: 'SackersGothic';
+    src: asset-url('SackersGothic.eot');
+    src: asset-url('SackersGothic.eot?iefix') format('eot'),
+         asset-url('SackersGothic.woff') format('woff'),
+         asset-url('SackersGothic.ttf') format('truetype'),
+         asset-url('SackersGothic.svg#webfont') format('svg');
 }
 
-body{
-    width: 11195px;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 12000px;
+    height: 100vh;
     position:absolute;
     top:0px;
     left:0px;
     bottom:0px;
 }
 
-.section{
-    margin:0px;
-    bottom:0px;
-    width: 2000px;
-    float:left;
-    height:100%;
+body, html {
+  min-height: 100%;
 }
 
-#section1 {
-	width: 1600px;
-	background: url(boob_elephant_image.png) top left no-repeat;
-	background-size: auto 100%;
+.section{
+    margin: 0px;
+    top: 0px;
+    bottom: 0px;
+    float: left;
+    height: 100%;
+}
+
+.image-scale {
+  max-width: 100%;
+  height: 100vh;
+  width: auto; /* ie8 */
+}
+
+#section1 img#boob_elephant {
+  max-width: 100%;
+  height: 100vh;
+  width: auto\9; /* ie8 */
 }
 
 #section2 {
-	width: 600px;
+	width: 1200px;
 	height: 100%;
 	overflow: hidden;
 }
 
-#section3 {
-	background: url(bum_to_wolf.png) top left no-repeat;
-	background-size: auto 100%;
-	width: 5060px;
-}
-
-#section4 {
-	width: 800px;
-}
-
-#section4 ul li {
-	list-style-type: none;
-}
-
-#section5 {
-	width: 1935px;
-	background: url(big_face_image.png) top left no-repeat;
-	background-size: auto 100%;
-}
-
-#section6 {
-	width: 1200px;
-}
-
-#section2 .post-container ul {
-	width: 100%;
+#section2 #now {
+  height: auto;
+  width: 90px;
+  margin: 0 auto;
+  margin-bottom: 60px;
 }
 
 #section2 .post-container {
-	position: relative;
-	top: 30%;
+  position: relative;
+  top: 15%;
+  text-align: center;
+}
+
+#section2 .post-container ul {
+  width: 100%;
+  padding-left: 35px;
+  text-align: justify;
 }
 
 #section2 .post-container ul li {
-	width: 20%;
-	margin-right: 30px;
-	float: left;
-	list-style-type: none;
+  width: 30%;
+  margin-right: 30px;
+  float: left;
+  list-style-type: none;
 }
 
 #section2 .post-container ul li p {
-	overflow: scroll;
-	height: 200px;
+  overflow: scroll;
+  height: 200px;
+  width: 100%;
 }
+
+#section2 .post-title {
+  float: left;
+  font-family: 'SackersGothic';
+  font-size: 3vh;
+}
+
+#section2 .post-date {
+  text-align: right;
+  font-family: 'SackersGothic';
+}
+
+#music-links {
+  z-index: 9999;
+}
+
+#music-links ul {
+  list-style-type: none;
+  height: 100vh;
+  background: url(space1.png) top left no-repeat;
+  background-size: cover;
+}
+
+#music-links ul li {
+  float: left;
+  margin-right: 120px;
+}
+
+#music-links ul li img {
+  height: 120px;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  -ms-transition: -ms-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;  
+}
+
+#music-links ul li img:hover {
+  transform:rotate(360deg);
+  -ms-transform:rotate(360deg);
+  -webkit-transform:rotate(360deg);
+}
+
+#section6 {
+  width: 750px;
+  background-color: black;
+}
+
+#section8 {
+  width: 500px;
+}
+
+#section8 ul li {
+  list-style-type: none;
+  float: left;
+  margin-right: 100px;
+}
+
+#section8 {
+  overflow: scroll;
+}
+
