@@ -86,12 +86,16 @@ body, html {
 #section2 .post-title {
   float: left;
   font-family: 'SackersGothic';
-  font-size: 3vh;
+  font-size: 20px;
+  font-size: 1vw;
 }
 
 #section2 .post-date {
   text-align: right;
+  float: right;
   font-family: 'SackersGothic';
+  font-size: 15px;
+  font-size: 1vw;
 }
 
 #music-links {
