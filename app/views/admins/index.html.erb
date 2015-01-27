@@ -3,8 +3,12 @@
 <ul>
   <% @posts.each do |post| %>
     <li>
-      <div><%= post.title %></div>
-      <div><%= post.created_at %></div>
+      <div><b><%= post.title %></b></div>
+      <div>Created at: <%= post.created_at.strftime("%m/%Y") %></div>
+      <div><%= post.body[0..50] %></div>
+      <%= link_to 'Edit', edit_post_path(post) %>
+      <%= link_to 'Destroy', post, method: :delete %>
+      <br><br>
   <% end %>
 </ul>
 
