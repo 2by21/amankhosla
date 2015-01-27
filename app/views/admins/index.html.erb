@@ -1,3 +1,5 @@
+<h1>Posts Index</h1>
+
 <ul>
   <% @posts.each do |post| %>
     <li>
@@ -5,3 +7,32 @@
       <div><%= post.created_at %></div>
   <% end %>
 </ul>
+
+<%= link_to 'New Post', new_post_path %>
+
+
+<h1>Video Index</h1>
+
+<ul>
+  <% @videos.each do |video| %>
+    <li>
+      <div><%= video.title %></div>
+      <div><%= video.body %></div>
+      <div><%= video.link %></div>
+  <% end %>
+</ul>
+
+<h1>New Video</h1>
+
+<%= form_for @video do |f| %>
+  <%= f.label :title %></br>
+  <%= f.text_field :title %></br>
+
+  <%= f.label :body %></br>
+  <%= f.text_area :body %></br>
+
+  <%= f.label :link %></br>
+  <%= f.text_field :link %></br>
+  </br>
+  <%= f.submit %>
+<% end %>

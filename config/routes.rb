@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   root 'static#home'
 
   resources :posts
+  resources :videos
 
   get '/admin' => 'admins#index'
 
