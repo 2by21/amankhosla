@@ -37,25 +37,12 @@
   What: <%= show.what %><br>
   Where: <%= show.where %><br>
   When: <%= show.when.strftime("%m/%d/%y %H%p") %><br>
-  How: <%= show.how %><br><br>
+  How: <%= show.how %><br>
+  <%= link_to 'Edit', edit_show_path(show) %>
+  <%= link_to 'Destroy', show, method: :delete %>
+
+  <br><br>
 <% end %>
 
-<h1>New Show</h1>
+<%= link_to 'New Show', new_show_path %>
 
-<%= form_for @show do |f| %>
-  <%= f.label :what %></br>
-  <%= f.text_field :what %></br>
-
-  <%= f.label :where %></br>
-  <%= f.text_field :where %></br>
-
-  <%= f.label :how %></br>
-  <%= f.text_field :how %></br>
-
-  <%= f.label :when %></br>
-  <%= f.datetime_select :when %></br>
-
-  </br>
-
-  <%= f.submit %>
-<% end %>
