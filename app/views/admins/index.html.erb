@@ -36,3 +36,32 @@
   </br>
   <%= f.submit %>
 <% end %>
+
+<h1>Shows</h1>
+
+<% @shows.each do |show| %>
+  What: <%= show.what %><br>
+  Where: <%= show.where %><br>
+  When: <%= show.when %><br>
+  How: <%= show.how %><br><br>
+<% end %>
+
+<h1>New Show</h1>
+
+<%= form_for @show do |f| %>
+  <%= f.label :what %></br>
+  <%= f.text_field :what %></br>
+
+  <%= f.label :where %></br>
+  <%= f.text_field :where %></br>
+
+  <%= f.label :how %></br>
+  <%= f.text_field :how %></br>
+
+  <%= f.label :when %></br>
+  <%= f.datetime_select :when %></br>
+
+  </br>
+
+  <%= f.submit %>
+<% end %>

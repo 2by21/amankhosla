@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   resources :posts
   resources :videos
+  resources :shows
 
   get '/admin' => 'admins#index'
 

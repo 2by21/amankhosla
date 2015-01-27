@@ -110,6 +110,8 @@
 </div>
 
 <div class="section" id="section10">
+
+    <h1>Shows / Clinics</h1>
     <table class="table">
         <tr>
             <th>WHAT</th>
@@ -117,35 +119,13 @@
             <th>WHEN</th>
             <th>HOW</th>
         </tr>
-        <tr>
-            <td>AMAN</td>
-            <td>ROOFTOP - NEW YORK</td> 
-            <td>12/12/24 7PM</td>
-            <td>BUY</td>
-        </tr>
-        <tr>
-            <td>SIKANDAR</td>
-            <td>ROOFTOP - NEW YORK</td> 
-            <td>12/12/14 7PM</td>
-            <td>BUY</td>
-        </tr>
-        <tr>
-            <td>SUNWOO</td>
-            <td>DOWNTOWN - SEATTLE</td> 
-            <td>12/12/24 7PM</td>
-            <td>BUY</td>
-        </tr>
-        <tr>
-            <td>JULIEE</td>
-            <td>NOT IN INDIA</td> 
-            <td>NEVER</td>
-            <td>BUY</td>
-        </tr>
-        <tr>
-            <td>AMAN</td>
-            <td>ROOFTOP - NEW YORK</td> 
-            <td>12/12/24 7PM</td>
-            <td>BUY</td>
-        </tr>
+        <% @shows.each do |show| %>
+            <tr>
+                <th><%= show.what %></th>
+                <th><%= show.where %></th>
+                <th><%= show.when %></th>
+                <th><%= show.how %></th>
+            </tr>
+        <% end %>
     </table>
 </div>
