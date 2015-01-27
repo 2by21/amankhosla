@@ -16,9 +16,10 @@
 <ul>
   <% @videos.each do |video| %>
     <li>
-      <div><%= video.title %></div>
-      <div><%= video.body %></div>
-      <div><%= video.link %></div>
+      <div>Title: <%= video.title %></div>
+      <div>Body: <%= video.body %></div>
+      <div>Link: <%= video.link %></div>
+    </li>
   <% end %>
 </ul>
 
@@ -42,7 +43,7 @@
 <% @shows.each do |show| %>
   What: <%= show.what %><br>
   Where: <%= show.where %><br>
-  When: <%= show.when %><br>
+  When: <%= show.when.strftime("%m/%d/%Y %H%p") %><br>
   How: <%= show.how %><br><br>
 <% end %>
 

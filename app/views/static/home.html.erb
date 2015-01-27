@@ -123,7 +123,7 @@
             <tr>
                 <th><%= show.what %></th>
                 <th><%= show.where %></th>
-                <th><%= show.when %></th>
+                <th><%= show.when.strftime("%m/%d/%Y %H%p") %></th>
                 <th><%= show.how %></th>
             </tr>
         <% end %>
