@@ -7,27 +7,15 @@
     <div class="post-container">
         <img id="now" src="assets/now.png"/>
         <ul>
-            <li>
-                <div class="post-title-and-date">
-                    <h3 class="post-title">CURRENT SOUNDS</h3>
-                    <h3 class="post-date">08/14</h3>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent malesuada eget augue sed tempus. Curabitur aliquet quam est, et elementum turpis dictum vel. Phasellus vitae ante nec augue blandit aliquet at faucibus massa. Integer lacinia dui eu arcu tristique vestibulum. Suspendisse tempus mi tellus, eu vehicula dolor feugiat a. Suspendisse arcu erat, bibendum in condimentum et, commodo quis metus. Nam vulputate viverra est, eget ornare ante iaculis euismod. Sed placerat, turpis eu scelerisque volutpat, dolor arcu semper nunc, nec consectetur lectus risus ac tellus. Maecenas sit amet sagittis risus.</p>
-            </li>
-            <li>
-                <div class="post-title-and-date">
-                    <h3 class="post-title">CURRENT SOUNDS</h3>
-                    <h3 class="post-date">08/14</h3>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent malesuada eget augue sed tempus. Curabitur aliquet quam est, et elementum turpis dictum vel. Phasellus vitae ante nec augue blandit aliquet at faucibus massa. Integer lacinia dui eu arcu tristique vestibulum. Suspendisse tempus mi tellus, eu vehicula dolor feugiat a. Suspendisse arcu erat, bibendum in condimentum et, commodo quis metus. Nam vulputate viverra est, eget ornare ante iaculis euismod. Sed placerat, turpis eu scelerisque volutpat, dolor arcu semper nunc, nec consectetur lectus risus ac tellus. Maecenas sit amet sagittis risus.</p>
-            </li>
-            <li>
-                <div class="post-title-and-date">
-                    <h3 class="post-title">CURRENT SOUNDS</h3>
-                    <h3 class="post-date">08/14</h3>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent malesuada eget augue sed tempus. Curabitur aliquet quam est, et elementum turpis dictum vel. Phasellus vitae ante nec augue blandit aliquet at faucibus massa. Integer lacinia dui eu arcu tristique vestibulum. Suspendisse tempus mi tellus, eu vehicula dolor feugiat a. Suspendisse arcu erat, bibendum in condimentum et, commodo quis metus. Nam vulputate viverra est, eget ornare ante iaculis euismod. Sed placerat, turpis eu scelerisque volutpat, dolor arcu semper nunc, nec consectetur lectus risus ac tellus. Maecenas sit amet sagittis risus.</p>
-            </li>
+            <% @posts.each do |post| %>
+                <li>
+                    <div class="post-title-and-date">
+                        <h3 class="post-title"><%= post.title %></h3>
+                        <h3 class="post-date"><%= post.created_at.strftime("%m/%Y") %></h3>
+                    </div>
+                    <p><%= post.body %></p>
+                </li>
+            <% end %>
         </ul>
     </div>
 </div>
@@ -61,7 +49,9 @@
     <img class="image-scale" id="bird-monkey" src="assets/bird_monkey.png"/>
 </div>
 
-<div class="section" id="section6"></div>
+<div class="section" id="section6">
+    <!-- youtube embed -->
+</div>
 
 <div class="section" id="section7">
     <img class="image-scale" id="spear-wolf" src="assets/spear_wolf.png"/>

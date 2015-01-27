@@ -1,0 +1,7 @@
+<ul>
+  <% @posts.each do |post| %>
+    <li>
+      <div><%= post.title %></div>
+      <div><%= post.created_at %></div>
+  <% end %>
+</ul>
