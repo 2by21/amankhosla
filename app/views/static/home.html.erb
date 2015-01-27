@@ -113,19 +113,24 @@
 
     <h1>Shows / Clinics</h1>
     <table class="table">
-        <tr>
-            <th>WHAT</th>
-            <th>WHERE</th>
-            <th>WHEN</th>
-            <th>HOW</th>
-        </tr>
-        <% @shows.each do |show| %>
+        <thead>
             <tr>
-                <th><%= show.what %></th>
-                <th><%= show.where %></th>
-                <th><%= show.when.strftime("%m/%d/%Y %H%p") %></th>
-                <th><%= show.how %></th>
+                <th>WHAT</th>
+                <th>WHERE</th>
+                <th>WHEN</th>
+                <th>HOW</th>
             </tr>
-        <% end %>
+        </thead>
+        <tbody>
+            <% @shows.each do |show| %>
+                <tr>
+                    <td><%= show.what %></td>
+                    <td><%= show.where %></td>
+                    <td><%= show.when.strftime("%m/%d/%Y %H%p") %></td>
+                    <td><a href="<%= show.how %>">BUY</a></td>
+                </tr>
+            <% end %>
+        </tbody>
     </table>
+
 </div>
