@@ -15,10 +15,12 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find(params[:id])
+    render layout: "admin_layout"
   end
 
   def edit
     @post = Post.find(params[:id])
+    render layout: "admin_layout"
   end
 
   def update
