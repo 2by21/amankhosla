@@ -8,7 +8,7 @@
       <div><%= post.body[0..50] %></div>
       <%= link_to 'Edit', edit_post_path(post) %>
       <%= link_to 'Destroy', post, method: :delete %>
-      <br><br>
+      <br>
   <% end %>
 </ul>
 
@@ -23,24 +23,13 @@
       <div>Title: <%= video.title %></div>
       <div>Body: <%= video.body %></div>
       <div>Link: <%= video.link %></div>
+      <%= link_to 'Edit', edit_video_path(video) %>
+      <%= link_to 'Destroy', video, method: :delete %>
     </li>
   <% end %>
 </ul>
 
-<h1>New Video</h1>
-
-<%= form_for @video do |f| %>
-  <%= f.label :title %></br>
-  <%= f.text_field :title %></br>
-
-  <%= f.label :body %></br>
-  <%= f.text_area :body %></br>
-
-  <%= f.label :link %></br>
-  <%= f.text_field :link %></br>
-  </br>
-  <%= f.submit %>
-<% end %>
+<%= link_to 'New Video', new_video_path %>
 
 <h1>Shows</h1>
 
