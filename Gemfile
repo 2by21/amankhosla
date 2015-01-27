@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.1.8'
 gem 'pg', group: :production
-gem 'sqlite3'
+gem 'sqlite3', group: :development
 
 #asset gems
 gem 'sass-rails', '~> 4.0.3'
