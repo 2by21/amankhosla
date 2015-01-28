@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   resources :videos
   resources :shows
 
+  get '/posts/surrounding/:id' => 'posts#surrounding'
+
   get '/admin' => 'admins#index'
 
   # Example of regular route:

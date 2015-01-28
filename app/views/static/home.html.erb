@@ -2,23 +2,7 @@
     <img class="image-scale" id="boob_elephant" src="assets/boob_elephant_image.png"/>
 </div>
 
-<div class="section" id="section2">
-
-    <div class="post-container">
-        <img id="now" src="assets/now.png"/>
-        <ul>
-            <% @posts.each do |post| %>
-                <li>
-                    <div class="post-title-and-date">
-                        <h3 class="post-title"><%= post.title %></h3>
-                        <h3 class="post-date"><%= post.created_at.strftime("%m/%Y") %></h3>
-                    </div>
-                    <p><%= post.body %></p>
-                </li>
-            <% end %>
-        </ul>
-    </div>
-</div>
+<%= render "blog_post_index" %>
 
 <div class="section" id="section3">
     <img class="image-scale" id="bum" src="assets/bum.png"/>

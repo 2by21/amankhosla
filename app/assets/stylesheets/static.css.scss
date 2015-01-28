@@ -98,6 +98,24 @@ body, html {
   font-size: 1vw;
 }
 
+#section2 ul p {
+  font-size: 20px;
+  font-size: 1vw;
+}
+
+#section2 ul#js-posts {
+  margin: 0 auto;
+  width: 100vw;
+}
+
+#section2 ul#js-posts h1 {
+  font-size: 15px;
+  font-size: 1vw;
+  list-style-type: none;
+  float: left;
+  margin-right: 15px;
+}
+
 #music-links {
   z-index: 9999;
 }
