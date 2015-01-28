@@ -42,7 +42,10 @@
 
     <ul class="video-preview-ul">
         <% @videos.each do |video| %>
-            <li><img class="video-preview" src="http://img.youtube.com/vi/<%= video.link %>/0.jpg"/></li>
+            <li>
+                <img class="video-preview" src="http://img.youtube.com/vi/<%= video.link %>/0.jpg"/>
+                <p><%= video.title %></p>
+            </li>
         <% end %>
     </ul>
 </div>
