@@ -48,3 +48,13 @@
 
 <%= link_to 'New Show', new_show_path %>
 
+</br>
+
+<h1>Links</h1>
+
+Example Format: http://www.cheese.com</br></br>
+
+<% @links.each do |link, index| %>
+  <%= link.url %> <%= link_to 'Edit', edit_link_path(link) %></br>
+<% end %>
+

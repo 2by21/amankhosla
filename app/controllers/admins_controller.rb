@@ -4,6 +4,7 @@ class AdminsController < ApplicationController
     @posts = Post.all
     @videos = Video.all
     @shows = Show.all
+    @links = Link.all
     render layout: "admin_layout"
   end
 end

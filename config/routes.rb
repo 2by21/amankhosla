@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   resources :posts
   resources :videos
   resources :shows
+  resources :links
 
   get '/posts/surrounding/:id' => 'posts#surrounding'
 
