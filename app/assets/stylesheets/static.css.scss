@@ -167,6 +167,14 @@ body, html {
   margin-right: 15px;
 }
 
+.tab-content {
+  display: none;
+}
+
+.active-tab {
+  display: block;
+}
+
 #section8 {
   width: 500px;
 }
