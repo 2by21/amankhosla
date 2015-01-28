@@ -39,6 +39,12 @@
         <h1><%= @video.title %></h1>
         <p><%= @video.body %></p>
     <% end %>
+
+    <ul class="video-preview-ul">
+        <% @videos.each do |video| %>
+            <li><img class="video-preview" src="http://img.youtube.com/vi/<%= video.link %>/0.jpg"/></li>
+        <% end %>
+    </ul>
 </div>
 
 <div class="section" id="section7">

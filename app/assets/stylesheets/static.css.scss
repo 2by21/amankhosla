@@ -157,6 +157,16 @@ body, html {
   color: white;
 }
 
+.video-preview {
+  height: auto;
+  width: 150px;
+}
+
+.video-preview-ul li {
+  float: left;
+  margin-right: 15px;
+}
+
 #section8 {
   width: 500px;
 }
