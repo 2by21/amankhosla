@@ -39,26 +39,10 @@ class PostsController < ApplicationController
   def surrounding
     post = Post.find(params[:id])
 
-    if post.previous.nil?
-      @prev_post = post
-      @post = post.next
-      @next_post = @post.next
-    elsif post.next.nil?
-      @next_post = post
-      @post = post.previous
-      @prev_post = @post.previous
-    else
-      @post = Post.find(params[:id])
-      @prev_post = @post.previous
-      @next_post = @post.next
-    end
-
-    @first_date = @prev_post.created_at.strftime("%m/%y")
-    @second_date = @post.created_at.strftime("%m/%y")
-    @third_date = @next_post.created_at.strftime("%m/%y")
+    posts = post.surrounding
 
     respond_to do |format|
-      format.json { render :json => [@prev_post, @post, @next_post, @first_date, @second_date, @third_date]}
+      format.json { render :json => [posts[0], posts[1], posts[2], posts[3], posts[4], posts[5]] }
     end
   end
 
