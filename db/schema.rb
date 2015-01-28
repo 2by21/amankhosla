@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150128140443) do
+ActiveRecord::Schema.define(version: 20150128142544) do
 
   create_table "bios", force: true do |t|
     t.text     "text"
@@ -39,6 +39,13 @@ ActiveRecord::Schema.define(version: 20150128140443) do
     t.string   "how"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "tools", force: true do |t|
+    t.string   "link"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "text"
   end
 
   create_table "videos", force: true do |t|

@@ -69,6 +69,11 @@
     </div>
 
     <div id="tools" class="tab-content" style="display: none;">
+        <ul>
+            <% @tools.each do |tool| %>
+                <li><%= link_to tool.text, tool.link %></li>
+            <% end %>
+        </ul>
     </div>
 
 </div>
