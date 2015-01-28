@@ -7,10 +7,11 @@ class StaticController < ApplicationController
     @shows = Show.all
     @bio = Bio.first
     @tools = Tool.all
-    @link1 = Link.find(1)
-    @link2 = Link.find(2)
-    @link3 = Link.find(3)
-    @link4 = Link.find(4)
+    links = Link.all.order('created_at DESC')
+    @link1 = links[0]
+    @link2 = links[1]
+    @link3 = links[2]
+    @link4 = links[3]
 	end
 	
 end
