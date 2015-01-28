@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   resources :videos
   resources :shows
   resources :links
+  resources :bios, only: [:edit, :update]
 
   get '/posts/surrounding/:id' => 'posts#surrounding'
 

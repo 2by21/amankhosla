@@ -5,6 +5,7 @@ class StaticController < ApplicationController
     @video = Video.first
     @videos = Video.all
     @shows = Show.all
+    @bio = Bio.first
     @link1 = Link.find(1)
     @link2 = Link.find(2)
     @link3 = Link.find(3)
