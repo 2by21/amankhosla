@@ -17,6 +17,7 @@ gem 'rails_script'
 gem 'quiet_assets'
 gem 'pry'
 gem 'by_star', :git => "git://github.com/radar/by_star"
+gem 'rails_12factor', group: :production
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
