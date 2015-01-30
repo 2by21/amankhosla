@@ -56,11 +56,4 @@ ActiveRecord::Schema.define(version: 20150128142544) do
     t.datetime "updated_at"
   end
 
-  create_table "youtubes", force: true do |t|
-    t.string   "title"
-    t.text     "body"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
 end
