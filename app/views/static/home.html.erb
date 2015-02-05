@@ -35,14 +35,14 @@
 
 <div class="section" id="section6">
     <% if @video %>
-        <iframe width="560" height="315" src="//www.youtube.com/embed/<%= @video.link %>" frameborder="0" allowfullscreen></iframe>
-        <h1><%= @video.title %></h1>
-        <p><%= @video.body %></p>
+        <iframe id="video-frame" width="560" height="315" src="//www.youtube.com/embed/<%= @video.link %>" frameborder="0" allowfullscreen></iframe>
+        <h1 id="video-title"><%= @video.title %></h1>
+        <p id="video-body"><%= @video.body %></p>
     <% end %>
 
     <ul class="video-preview-ul">
         <% @videos.each do |video| %>
-            <li>
+            <li class="video" data-url="<%= video.link %>" data-title="<%= video.title %>" data-body="<%= video.body %>">
                 <img class="video-preview" src="http://img.youtube.com/vi/<%= video.link %>/0.jpg"/>
                 <p><%= video.title %></p>
             </li>

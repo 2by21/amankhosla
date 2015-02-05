@@ -1,4 +1,5 @@
 $ ->
+  #post coffeescript
   switch_posts = (data, index) ->
     if index == 0
       left = data[0]
@@ -50,7 +51,17 @@ $ ->
         switch_posts(data, current_index)
   })
 
+  # video coffeescript
 
+  $('.video').click (event) ->
+    youtube = "//www.youtube.com/embed/"
+    video_id = $(this).data('url')
+    title = $(this).data('title')
+    body = $(this).data('body')
+
+    $('#video-frame').attr('src', youtube+video_id)
+    $('#video-title').text(title)
+    $('#video-body').text(body)
 
   $('.tab-link').click (e) ->
     $('.tab-content').removeClass('active-tab')
