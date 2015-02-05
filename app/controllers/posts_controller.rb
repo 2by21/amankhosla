@@ -4,6 +4,13 @@ class PostsController < ApplicationController
     @post = Post.new
   end
 
+  def index
+    @posts = Post.all
+    respond_to do |format|
+      format.json { render json: @posts }
+    end
+  end
+
   def create
     @post = Post.new(post_params)
     if @post.save

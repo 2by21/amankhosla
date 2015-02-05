@@ -3,24 +3,18 @@
     <div class="post-container">
         <img id="now" src="assets/now.png"/>
         <ul>
-            <% @posts.first(3).to_enum.with_index(1).each do |post, index| %>
-                <li id="<%= index.ordinalize %>">
+            <% ['1st', '2nd', '3rd'].each do |post| %>
+                <li id="<%= post %>">
                     <div class="post-title-and-date">
-                        <h3 class="post-title"><%= post.title %></h3>
-                        <h3 class="post-date"><%= post.created_at.strftime("%m/%y") %></h3>
+                        <h3 class="post-title"></h3>
+                        <h3 class="post-date"></h3>
                     </div>
-                    <p class="post-body"><%= post.body %></p>
+                    <p class="post-body"></p>
                 </li>
             <% end %>
         </ul>
 
-        <ul id="js-posts">
-            <% @posts.each do |post| %>
-                <div data-id="<%= post.id %>">
-                    <h1 class="js-post"><a href="#"><%= post.title %> <%= post.created_at.strftime("%m/%Y") %></a></h1>
-                </div>
-            <% end %>
-        </ul>
+        <ul id="ul-posts-list"></ul>
     </div>
 
 </div>
