@@ -66,6 +66,15 @@
     </div>
 
     <div id="photos" class="tab-content" style="display: none;">
+        <div class="row">
+            <% @galleries.each do |gallery| %>
+                <div class="col-sm-6">
+                    <div>
+                        <img class="gallery-photo" src="http://s3-ec.buzzfed.com/static/enhanced/webdr02/2013/4/16/14/enhanced-buzz-21680-1366138667-19.jpg"/>
+                    </div>
+                </div>
+            <% end %>
+        </div>
     </div>
 
     <div id="tools" class="tab-content" style="display: none;">

@@ -200,16 +200,14 @@ body, html {
 
 #section8 {
   width: 500px;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 #section8 ul li {
   list-style-type: none;
   float: left;
   margin-right: 100px;
-}
-
-#section8 {
-  overflow: scroll;
 }
 
 #section10 .table thead tr th {
@@ -231,4 +229,9 @@ body, html {
   font-size: 1.9vh;
   max-height: 70px;
   overflow: scroll;
+}
+
+.gallery-photo {
+  width: 100%;
+  cursor: pointer;
 }

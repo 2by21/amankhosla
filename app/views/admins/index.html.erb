@@ -80,7 +80,7 @@ Example Format: http://www.cheese.com</br></br>
 <h1>Galleries</h1>
 
 <%= link_to 'New Gallery', new_gallery_path %>
-
+<br><br>
 <% @galleries.each do |gallery| %>
   <p>
     <%= link_to gallery.name, gallery %>
