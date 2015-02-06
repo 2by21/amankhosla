@@ -52,7 +52,7 @@ body, html {
 	overflow: hidden;
 }
 
-#section2 #ul-posts-list {
+#section2 .post-selector-container {
   display:none;
 }
 
@@ -75,7 +75,7 @@ body, html {
   text-align: center;
 }
 
-#section2 .post-container ul {
+#section2 .post-container > ul {
   width: 100%;
   padding-left: 35px;
   text-align: justify;
@@ -119,16 +119,34 @@ body, html {
   width: 100vw;
 }
 
+#section2 .post-selector-container {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#section2 .js-post {
+  white-space: nowrap;
+}
+
 #section2 #ul-posts-list {
   li {
     width:20%;
   }
   .list-post-title, .list-post-date {
     font-family: 'SackersGothic';
-    font-size: 20px;
-    font-size: 1vw;
+    font-size: 10px;
   }
 }
+
+#section2 ol#pagination{
+  display:none;
+}
+
+/*#section2 #ul-posts-list::before{
+  content: 'yo';
+  background-image: image-url('posts-next.png')
+}*/
 
 #section2 ul#js-posts h1 {
   font-size: 15px;
