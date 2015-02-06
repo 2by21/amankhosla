@@ -55,13 +55,12 @@ $ ->
 
       $('#ul-posts-list').easyPaginate()
       
-
       $('#post-prev').click ->
-        unless $('ol#pagination .prev').css('display') == 'none'
-          $('ol#pagination .prev').click()
+        unless $('#section2 ol#pagination .prev').css('display') == 'none'
+          $('#section2 ol#pagination .prev').click()
       $('#post-nxt').click ->
-        unless $('ol#pagination .next').css('display') == 'none'
-          $('ol#pagination .next').click()
+        unless $('#section2 ol#pagination .next').css('display') == 'none'
+          $('#section2 ol#pagination .next').click()
 
   })
 
@@ -91,8 +90,6 @@ $ ->
     clicked_tab = $(this).data('tab')
     $('#' + clicked_tab).addClass('active-tab')
 
-
-
   $('ul.nav a').bind 'click', (event) ->
     event.preventDefault()
     $anchor = $(this)
@@ -100,6 +97,15 @@ $ ->
     $('html, body').stop().animate({
       scrollLeft: $($anchor.attr('href')).offset().left
     }, 1000)
+
+  $('.video-preview-ul').easyPaginate()
+      
+  $('#video-prev').click ->
+    unless $('#section6 ol#pagination .prev').css('display') == 'none'
+      $('#section6 ol#pagination .prev').click()
+  $('#video-nxt').click ->
+    unless $('#section6 ol#pagination .next').css('display') == 'none'
+      $('#section6 ol#pagination .next').click()
 
 
 

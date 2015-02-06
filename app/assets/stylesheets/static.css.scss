@@ -139,7 +139,7 @@ body, html {
   }
 }
 
-#section2 ol#pagination{
+#section2 ol#pagination, #section6 ol#pagination{
   display:none;
 }
 
@@ -202,6 +202,10 @@ body, html {
 .video-preview {
   height: auto;
   width: 100%;
+}
+
+#video-prev, #video-nxt{
+  width: 40px;
 }
 
 /*.video-preview-ul li {

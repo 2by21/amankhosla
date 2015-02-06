@@ -39,7 +39,9 @@
         <h1 id="video-title"><%= @video.title %></h1>
         <p id="video-body"><%= @video.body %></p>
     <% end %>
-
+    
+    <span><img id="video-prev" src="assets/video-left.png"/></span>
+    <span><img id="video-nxt" src="assets/video-right.png"/></span>
     <ul class="video-preview-ul row">
         <% @videos.each do |video| %>
             <li class="video col-sm-3" data-url="<%= video.link %>" data-title="<%= video.title %>" data-body="<%= video.body %>">
