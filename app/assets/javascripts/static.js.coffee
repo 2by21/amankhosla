@@ -49,6 +49,10 @@ $ ->
       $('#ul-posts-list li').click ->
         current_index = $(this).data('index')
         switch_posts(data, current_index)
+      
+      $('#archive-btn').click ->
+        $('#ul-posts-list').show()
+
   })
 
   # video coffeescript

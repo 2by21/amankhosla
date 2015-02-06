@@ -5,7 +5,7 @@ class PostsController < ApplicationController
   end
 
   def index
-    @posts = Post.all
+    @posts = Post.all.order(created_at: :desc)
     respond_to do |format|
       format.json { render json: @posts }
     end
@@ -41,16 +41,6 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
     @post.destroy
     redirect_to admin_path
-  end
-
-  def surrounding
-    post = Post.find(params[:id])
-
-    posts = post.surrounding
-
-    respond_to do |format|
-      format.json { render :json => [posts[0], posts[1], posts[2], posts[3], posts[4], posts[5]] }
-    end
   end
 
   private

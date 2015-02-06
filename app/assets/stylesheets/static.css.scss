@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: 'SackersGothic';
     src: asset-url('SackersGothic.eot');
@@ -50,6 +51,16 @@ body, html {
 	height: 100%;
 	overflow: hidden;
 }
+
+#section2 #ul-posts-list {
+  display:none;
+}
+
+#section2 #archive-btn {
+  width:3%;
+}
+
+
 
 #section2 #now {
   height: auto;
@@ -106,6 +117,17 @@ body, html {
 #section2 ul#js-posts {
   margin: 0 auto;
   width: 100vw;
+}
+
+#section2 #ul-posts-list {
+  li {
+    width:20%;
+  }
+  .list-post-title, .list-post-date {
+    font-family: 'SackersGothic';
+    font-size: 20px;
+    font-size: 1vw;
+  }
 }
 
 #section2 ul#js-posts h1 {
