@@ -8,6 +8,7 @@ class AdminsController < ApplicationController
     @bio = Bio.first
     @tools = Tool.all
     @galleries = Gallery.all
+    @projects = Project.all
     render layout: "admin_layout"
   end
 end

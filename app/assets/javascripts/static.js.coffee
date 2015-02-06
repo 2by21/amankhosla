@@ -85,6 +85,8 @@ $ ->
     $('#video-title').text(title)
     $('#video-body').text(body)
 
+  # Tabs coffescript
+
   $('.tab-link').click (e) ->
     $('.tab-content').removeClass('active-tab')
     clicked_tab = $(this).data('tab')

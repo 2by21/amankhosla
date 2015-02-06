@@ -8,6 +8,7 @@ class StaticController < ApplicationController
     @bio = Bio.first
     @tools = Tool.all
     @galleries = Gallery.all
+    @projects = Project.all
     links = Link.all.order('created_at DESC')
     @link1 = links[0]
     @link2 = links[1]

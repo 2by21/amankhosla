@@ -63,6 +63,12 @@
         <li class="tab-link" data-tab="tools"><a href="#">TOOLS</a></li>
     </ul><br>
 
+    <div id="other" class="tab-content">
+        <% @projects.each do |project| %>
+            <%= link_to project.name, project.url %>
+        <% end %>
+    </div>
+
     <div id="bio" class="tab-content active-tab">
         <%= @bio.text %>
     </div>
@@ -103,6 +109,8 @@
             <% end %>
         </ul>
     </div>
+
+    <h1 class="tab-link" data-tab="other"><a href="#">Other Projects</a></h1>
 
 </div>
 
