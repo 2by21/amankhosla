@@ -51,7 +51,17 @@ $ ->
         switch_posts(data, current_index)
       
       $('#archive-btn').click ->
-        $('#ul-posts-list').show()
+        $('.post-selector-container').show()
+
+      $('#ul-posts-list').easyPaginate()
+      
+
+      $('#post-prev').click ->
+        unless $('ol#pagination .prev').css('display') == 'none'
+          $('ol#pagination .prev').click()
+      $('#post-nxt').click ->
+        unless $('ol#pagination .next').css('display') == 'none'
+          $('ol#pagination .next').click()
 
   })
 
