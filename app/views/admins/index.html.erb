@@ -75,3 +75,16 @@ Example Format: http://www.cheese.com</br></br>
 </ul>
 
 <%= link_to 'New Tool', new_tool_path %>
+
+
+<h1>Galleries</h1>
+
+<%= link_to 'New Gallery', new_gallery_path %>
+
+<% @galleries.each do |gallery| %>
+  <p>
+    <%= link_to gallery.name, gallery %>
+    <%= link_to 'Edit', edit_gallery_path(gallery) %>
+    <%= link_to 'Destroy', gallery, method: :delete %>
+  </p>
+<% end %>
