@@ -16,7 +16,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'rails_script'
 gem 'quiet_assets'
 gem 'pry'
-gem 'by_star', :git => "git://github.com/radar/by_star"
 gem 'rails_12factor', group: :production
 
 # Use ActiveModel has_secure_password
