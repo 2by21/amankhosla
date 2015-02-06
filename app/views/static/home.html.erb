@@ -67,11 +67,28 @@
 
     <div id="photos" class="tab-content" style="display: none;">
         <div class="row">
-            <% @galleries.each do |gallery| %>
+            <% @galleries.each do |gallery, index| %>
                 <div class="col-sm-6">
                     <div>
-                        <img class="gallery-photo" src="http://s3-ec.buzzfed.com/static/enhanced/webdr02/2013/4/16/14/enhanced-buzz-21680-1366138667-19.jpg"/>
+                        <img class="gallery-photo" data-gallery="<%= gallery.id %>" src="http://s3-ec.buzzfed.com/static/enhanced/webdr02/2013/4/16/14/enhanced-buzz-21680-1366138667-19.jpg"/>
                     </div>
+
+                    <div class="modal fade" id="gallery-<%= gallery.id %>">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <%= image_tag gallery.images.first.photo.url(:original), data: { parent: index } %>
+                                </div>
+                                <div class="modal-footer">
+                                    <ul>
+                                        <% gallery.images.each do |image| %>
+                                            <li class="gallery-li"><%= image_tag image.photo.url(:icon), data: { original: image.photo.url(:original), parent: index } %></li>
+                                        <% end %>
+                                    </ul>
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal -->
                 </div>
             <% end %>
         </div>

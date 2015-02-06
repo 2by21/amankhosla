@@ -55,6 +55,15 @@ $ ->
 
   })
 
+  #photo gallery coffeescript
+  $('.gallery-photo').click ->
+    id = "#gallery-" + $(this).data('gallery')
+    $('.modal' + id).modal()
+
+  $('.gallery-li img').click ->
+    src = $(this).data('original')
+    $(this).parent().parent().parent().siblings('.modal-body').children('img').attr('src', src)
+
   # video coffeescript
 
   $('.video').click (event) ->

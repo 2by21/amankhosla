@@ -235,3 +235,23 @@ body, html {
   width: 100%;
   cursor: pointer;
 }
+
+.modal-body {
+  padding: 0 !important;
+}
+
+.modal-body img {
+  width: 100%;
+}
+
+.gallery-li {
+  margin-right: 0 !important;
+}
+
+.modal-footer {
+  padding: 0 !important;
+}
+
+.modal-backdrop.in {
+  opacity: 0.9 !important;
+}
