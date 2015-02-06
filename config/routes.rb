@@ -11,6 +11,9 @@ Rails.application.routes.draw do
   resources :links
   resources :bios, only: [:edit, :update]
   resources :tools
+  resources :galleries do
+    resources :images
+  end
 
   get '/posts/surrounding/:id' => 'posts#surrounding'
 

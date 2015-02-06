@@ -1,0 +1,8 @@
+<h1><%= @gallery.name %></h1>
+
+<%= link_to 'New Image', new_gallery_image_path(@gallery) %>
+<br>
+<% @gallery.images.each do |image| %>
+  <%= image_tag image.photo.url(:thumb) %>
+<% end %>
+

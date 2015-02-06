@@ -16,8 +16,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'rails_script'
 gem 'quiet_assets'
 gem 'pry'
-gem 'by_star', :git => "git://github.com/radar/by_star"
 gem 'rails_12factor', group: :production
+gem 'aws-sdk', '~> 1.61.0'
+gem 'paperclip'
+gem 'better_errors'
+gem "binding_of_caller"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

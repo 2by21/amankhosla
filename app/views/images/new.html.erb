@@ -1,0 +1,8 @@
+<h1>New Form for gallery: <%= @gallery.name %></h1>
+
+<%= form_for [@gallery, @image] do |f| %>
+  <%= f.label :photo %>
+  <%= f.file_field :photo %>
+
+  <%= f.submit %>
+<% end %>

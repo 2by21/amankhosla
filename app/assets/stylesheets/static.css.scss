@@ -195,18 +195,19 @@ body, html {
   width: 560px;
   background-color: black;
   color: white;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .video-preview {
   height: auto;
-  width: 150px;
+  width: 100%;
 }
 
-.video-preview-ul li {
+/*.video-preview-ul li {
   float: left;
   margin-right: 15px;
-}
+}*/
 
 .tab-content {
   display: none;
@@ -218,16 +219,14 @@ body, html {
 
 #section8 {
   width: 500px;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 #section8 ul li {
   list-style-type: none;
   float: left;
   margin-right: 100px;
-}
-
-#section8 {
-  overflow: scroll;
 }
 
 #section10 .table thead tr th {
@@ -249,4 +248,29 @@ body, html {
   font-size: 1.9vh;
   max-height: 70px;
   overflow: scroll;
+}
+
+.gallery-photo {
+  width: 100%;
+  cursor: pointer;
+}
+
+.modal-body {
+  padding: 0 !important;
+}
+
+.modal-body img {
+  width: 100%;
+}
+
+.gallery-li {
+  margin-right: 0 !important;
+}
+
+.modal-footer {
+  padding: 0 !important;
+}
+
+.modal-backdrop.in {
+  opacity: 0.9 !important;
 }
