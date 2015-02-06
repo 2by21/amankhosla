@@ -43,16 +43,6 @@ class PostsController < ApplicationController
     redirect_to admin_path
   end
 
-  def surrounding
-    post = Post.find(params[:id])
-
-    posts = post.surrounding
-
-    respond_to do |format|
-      format.json { render :json => [posts[0], posts[1], posts[2], posts[3], posts[4], posts[5]] }
-    end
-  end
-
   private
 
     def post_params
