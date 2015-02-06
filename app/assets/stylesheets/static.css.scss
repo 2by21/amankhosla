@@ -155,6 +155,7 @@ body, html {
   width: 560px;
   background-color: black;
   color: white;
+  overflow: scroll;
 }
 
 .video-preview {
@@ -198,4 +199,14 @@ body, html {
 #section10 .table tbody tr td {
   font-weight: lighter;
   text-align: center;
+}
+
+#video-title {
+  font-size: 2.5vh;
+}
+
+#video-body {
+  font-size: 1.9vh;
+  max-height: 70px;
+  overflow: scroll;
 }
