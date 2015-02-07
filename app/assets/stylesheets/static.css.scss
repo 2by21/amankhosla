@@ -26,12 +26,32 @@ body, html {
   min-height: 100%;
 }
 
+.tools {
+  font-family: 'SackersGothic';
+  font-size: 40px;
+  text-align: center;
+  margin-right: 0 !important;
+  float: none !important;
+}
+
+.tools a:hover {
+  text-decoration: none;
+}
+
+.black a {
+  color: black;
+}
+
+.white a {
+  color: grey;
+}
+
 .section{
-    margin: 0px;
-    top: 0px;
-    bottom: 0px;
-    float: left;
-    height: 100%;
+  margin: 0px;
+  top: 0px;
+  bottom: 0px;
+  float: left;
+  height: 100%;
 }
 
 .image-scale {

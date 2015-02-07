@@ -108,12 +108,13 @@
 
     <div id="tools" class="tab-content" style="display: none;">
         <ul>
-            <% @tools.each do |tool| %>
-                <li><%= link_to tool.text, tool.link %></li>
+            <% @tools.each_with_index do |tool, index| %>
+                <li class="tools <%= index.even? ? 'black' : 'white' %>"><%= link_to tool.text, tool.link %></li>
             <% end %>
         </ul>
     </div>
-
+    <br>
+    <br>
     <h1 class="tab-link" data-tab="other"><a href="#">Other Projects</a></h1>
 
 </div>
