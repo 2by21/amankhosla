@@ -1,4 +1,10 @@
 class ToolsController < ApplicationController
+  layout 'admin_layout'
+  before_action :authenticate
+  def index
+    @tools = Tool.all
+  end
+
   def new
     @tool = Tool.new
   end

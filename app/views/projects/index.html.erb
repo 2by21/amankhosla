@@ -1,0 +1,11 @@
+<h1>Other Projects</h1>
+
+<%= link_to 'New Other Project', new_project_path %>
+
+<% @projects.each do |project| %>
+  <p>
+    <h3><%= link_to project.name, project %></h3>
+    <%= link_to 'Edit', edit_project_path(project) %>
+    <%= link_to 'Destroy', project, method: :delete %>
+  </p>
+<% end %>

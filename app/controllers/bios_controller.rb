@@ -1,4 +1,7 @@
 class BiosController < ApplicationController
+  before_action :authenticate
+
+  layout 'admin_layout'
 
   def edit
     @bio = Bio.first

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,7 +9,33 @@
 </head>
 <body>
 
-<%= yield %>
+<div class="container">
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Admin Dashboard</h3>
+  </div>
+  <div class="panel-body">
+
+  <ul class="nav nav-tabs">
+    <li class=""><a href="<%= posts_path %>" >Blog</a></li>
+    <li><a href="<%= videos_path %>">Videos</a></li>
+    <li><a href="<%= shows_path %>">Shows</a></li>
+    <li><a href="<%#= clinics_path %>">Clinics</a></li>
+    <li><a href="<%= links_path %>">Links</a></li>
+    <li><a href="<%= edit_bio_path(Bio.first) %>">Bio</a></li>
+    <li><a href="<%= tools_path %>">Tools</a></li>
+    <li><a href="<%= galleries_path %>">Media</a></li>
+    <li><a href="<%= projects_path %>">Projects</a></li>
+  </ul>
+
+  <div class="admin-content">
+    <%= yield %>
+  </div>
+  
+  </div>
+</div>
+</div>
+
 
 <%= include_rails_script %>
 </body>

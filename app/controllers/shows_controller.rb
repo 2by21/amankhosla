@@ -1,4 +1,10 @@
 class ShowsController < ApplicationController
+  layout 'admin_layout'  
+  before_action :authenticate
+  def index
+    @shows = Show.all
+  end
+
   def new
     @show = Show.new
   end

@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+  layout 'admin_layout'
+  before_action :authenticate, except: :index
 
   def new
     @post = Post.new
@@ -8,6 +10,7 @@ class PostsController < ApplicationController
     @posts = Post.all.order(created_at: :desc)
     respond_to do |format|
       format.json { render json: @posts }
+      format.html
     end
   end
 
