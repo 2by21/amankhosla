@@ -317,6 +317,11 @@ body, html {
   font-size: 14px;
 }
 
+#bio {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
 .tab-link-ul .tab-link {
   text-align: center;
 }
