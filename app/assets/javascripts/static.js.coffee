@@ -94,14 +94,6 @@ $ ->
     clicked_tab = $(this).data('tab')
     $('#' + clicked_tab).addClass('active-tab')
 
-  $('ul.nav a').bind 'click', (event) ->
-    event.preventDefault()
-    $anchor = $(this)
-
-    $('html, body').stop().animate({
-      scrollLeft: $($anchor.attr('href')).offset().left
-    }, 1000)
-
   $('.video-preview-ul').easyPaginate()
       
   $('#video-prev').click ->
