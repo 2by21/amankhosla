@@ -58,6 +58,7 @@ body, html {
 
 #section2 #archive-btn {
   width:3%;
+  cursor: pointer;
 }
 
 
@@ -136,6 +137,9 @@ body, html {
 }
 
 #section2 #ul-posts-list {
+  li{
+    cursor:pointer;
+  }
   .list-post-title, .list-post-date {
     font-family: 'SackersGothic';
     font-size: 10px;
@@ -167,6 +171,7 @@ body, html {
   display: inline-block;
   height:100%;
   vertical-align:middle;
+  cursor: pointer;
 }
 
 #post-prev-img, #post-nxt-img{
@@ -209,7 +214,7 @@ body, html {
 }
 
 #section6 {
-  width: 560px;
+  width: 660px;
   background-color: black;
   color: white;
   overflow-y: scroll;
@@ -221,8 +226,30 @@ body, html {
   width: 100%;
 }
 
-#video-prev, #video-nxt{
+.video-detail-wrapper{
+  margin:0 50px 0 50px;
+}
+
+
+
+#video-prev-img, #video-nxt-img{
   width: 40px;
+}
+
+#video-prev, #video-nxt{
+  width:50px;
+  display: inline-block;
+  vertical-align:middle;
+  cursor: pointer;
+}
+
+.video-preview-ul {
+  display: inline-block;
+  width: 550px;
+  height: 50px;
+  li{
+    list-style-type: none;
+  } 
 }
 
 /*.video-preview-ul li {
@@ -267,7 +294,6 @@ body, html {
 
 #video-body {
   font-size: 1.9vh;
-  max-height: 70px;
   overflow: scroll;
 }
 
