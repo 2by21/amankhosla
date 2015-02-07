@@ -3,7 +3,9 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'static#home'
+  root 'static#welcome'
+
+  get '/home' => 'static#home', as: 'home'
 
   resources :posts
   resources :videos

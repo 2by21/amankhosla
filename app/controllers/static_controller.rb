@@ -15,5 +15,9 @@ class StaticController < ApplicationController
     @link3 = links[2]
     @link4 = links[3]
   end
+
+  def welcome
+    render layout: 'landing'
+  end
   
 end
