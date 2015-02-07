@@ -43,7 +43,7 @@ $ ->
       $('#3rd .post-date').text(data[2]['formatted_date'])
 
       for post, index in data
-        post_data = "<li data-index=" + index + "><h3 class='js-post'><a href='#'><span class='list-post-title'>" + post['title'] + "</span> <span class='list-post-date'>" + post['formatted_date'] + "</span></a></h3></li>"
+        post_data = "<li data-index=" + index + " class='post-selector-li'><h3 class='js-post'><a href='#'><span class='list-post-title'>" + post['title'] + "</span> <span class='list-post-date'>" + post['formatted_date'] + "</span></a></h3></li>"
         $('#ul-posts-list').append(post_data)
 
       $('#ul-posts-list li').click ->
