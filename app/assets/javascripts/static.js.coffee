@@ -105,3 +105,11 @@ $ ->
 
 
 
+
+  #shows/clinics tables coffeescript
+  $('.table').DataTable({
+    autoWidth: false
+    paging: false
+    scrollY: "350px"
+    searching: false
+  })
