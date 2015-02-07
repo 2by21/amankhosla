@@ -68,9 +68,11 @@
     </ul><br>
 
     <div id="other" class="tab-content">
-        <% @projects.each do |project| %>
-            <%= link_to project.name, project.url %>
-        <% end %>
+        <ul>
+            <% @projects.each_with_index do |project, index| %>
+                <li class="tools <%= index.even? ? 'black' : 'white' %>"><%= link_to project.name, project.url %></li>
+            <% end %>
+        </ul>
     </div>
 
     <div id="bio" class="tab-content active-tab">
