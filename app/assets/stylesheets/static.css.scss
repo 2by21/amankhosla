@@ -283,6 +283,17 @@ body, html {
   height: 400px;
 }
 
+.tab-link a {
+  font-family: 'SackersGothic';
+  color: black;
+  text-decoration: none;
+}
+
+.tab-link a:hover, .tab-link a:active {
+  text-decoration: none;
+}
+
+
 .active-tab-link::before {
   font-family: 'SackersGothic';
   content: "(";
@@ -300,6 +311,10 @@ body, html {
   color: black;
   text-decoration: none;
   font-family: 'SackersGothic';
+}
+
+#other.tab-content li a {
+  font-size: 14px;
 }
 
 .tab-link-ul .tab-link {
