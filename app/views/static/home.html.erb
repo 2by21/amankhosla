@@ -82,10 +82,14 @@
                     </div>
 
                     <div class="modal fade" id="gallery-<%= gallery.id %>">
+                        <%= image_tag 'gallery_logo.png', style: 'position: absolute; top: 15px; left: 15px; width: 80px; height: auto;' %>
+                        <%= image_tag 'gallery_x_button.png', style: 'position: absolute; top: 15px; right: 15px; width: 40px; height: auto;' %>
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-body">
-                                    <%= image_tag gallery.images.first.photo.url(:original), data: { parent: index } %>
+                                    <% if gallery.images.size > 0 %>
+                                        <%= image_tag gallery.images.first.photo.url(:original), data: { parent: index } %>
+                                    <% end %>
                                 </div>
                                 <div class="modal-footer">
                                     <ul>
