@@ -75,10 +75,10 @@
 
     <div id="photos" class="tab-content" style="display: none;">
         <div class="row">
-            <% @galleries.each do |gallery, index| %>
+            <% @galleries.each_with_index do |gallery, index| %>
                 <div class="col-sm-6">
                     <div>
-                        <img class="gallery-photo" data-gallery="<%= gallery.id %>" src="http://s3-ec.buzzfed.com/static/enhanced/webdr02/2013/4/16/14/enhanced-buzz-21680-1366138667-19.jpg"/>
+                        <img class="gallery-photo" data-gallery="<%= gallery.id %>" src="assets/gallery_cover_<%= index %>.png"/>
                     </div>
 
                     <div class="modal fade" id="gallery-<%= gallery.id %>">
