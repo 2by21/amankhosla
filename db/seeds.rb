@@ -4,7 +4,15 @@ Link.create(url: 'http://www.example.com')
 Link.create(url: 'http://www.example.com')
 Link.create(url: 'http://www.example.com')
 
-Bio.create(text: "empty")
+Bio.create(text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum hendrerit nisl ac sapien vestibulum pretium. Nam rhoncus augue a venenatis cursus. Morbi maximus maximus odio sit amet laoreet. Ut sollicitudin, neque vel rutrum facilisis, justo mauris consectetur metus, sed pellentesque sapien nisi in est. Vivamus tristique tortor vulputate, sollicitudin arcu rhoncus, varius metus. Phasellus consequat ac dolor at mollis. Sed ex tellus, lacinia at augue sit amet, ultricies accumsan quam. Maecenas at ipsum augue.
+
+Etiam ut commodo felis. In vitae enim sed tortor tincidunt commodo et ac libero. Etiam est ex, mollis nec massa quis, mattis fringilla nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus vitae nisi felis. Pellentesque urna lectus, tempus sed lacus eu, facilisis consequat tortor. Donec cursus libero tempus tincidunt bibendum. Phasellus interdum pharetra felis sed vestibulum.
+
+Integer dignissim quis arcu eu mattis. Donec eget sollicitudin nunc. Nunc vitae nibh neque. Duis condimentum felis a facilisis placerat. Sed aliquet ultricies posuere. In dui risus, pulvinar non nibh vitae, rhoncus sollicitudin leo. Maecenas non sodales libero. Donec eleifend sapien nunc, auctor vulputate urna ullamcorper non. Ut in augue non nisi imperdiet bibendum ut in metus. Cras vitae dui ante. Donec eget risus quis justo imperdiet bibendum. Duis vel mi luctus, imperdiet ex sed, volutpat turpis. Duis eleifend nunc sit amet ante lobortis tristique. Duis molestie, nisl a iaculis aliquet, est urna feugiat dolor, id tempor lorem sem in mauris.
+
+Donec eu ullamcorper felis, at maximus ipsum. Fusce massa quam, sagittis ac eros tempus, condimentum finibus justo. Curabitur vitae elementum dolor, vitae vehicula mi. Maecenas ultricies sem id odio maximus faucibus. Donec bibendum lectus sapien, vel pharetra ante semper in. Vestibulum in facilisis lacus. Suspendisse eget erat arcu. Nam in egestas erat. Morbi fermentum lorem eget mauris posuere, quis suscipit magna lobortis. Integer non elit efficitur, cursus lectus quis, dapibus nulla. Integer pretium molestie diam eu consequat. Nulla quis urna ac velit ornare malesuada vel eu neque.
+
+Nulla maximus tempor ante, non lobortis risus venenatis in. Sed risus leo, ultrices a dui sagittis, feugiat aliquam lacus. Nunc rhoncus urna eget nibh ullamcorper, sed varius odio egestas. Integer molestie, tortor nec viverra luctus, elit tellus faucibus odio, nec convallis leo nisi at quam. Suspendisse interdum justo quis vestibulum aliquam. In congue vehicula leo vel vulputate. Ut maximus volutpat purus, in mattis nulla auctor in. In eu orci semper risus sollicitudin gravida. Donec id purus vitae augue bibendum tempus. Suspendisse et mollis purus, et pretium tortor. Suspendisse sed ultrices tellus. Phasellus et sagittis mi, in luctus enim.")
 
 Post.create(title: "FIRST", body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum a augue vitae viverra. Phasellus fringilla felis ac condimentum blandit. Maecenas dapibus mi id sem tempor, vitae finibus diam condimentum. Nunc magna lorem, molestie in augue sed, fermentum facilisis nulla. Proin dui turpis, sollicitudin porta venenatis eu, pretium sed diam. Vestibulum eget consectetur urna. Donec laoreet pretium dui. Curabitur felis lorem, euismod sed fringilla sit amet, aliquet ut risus. Sed orci justo, laoreet nec condimentum et, dignissim vitae nunc. Maecenas a tellus semper, imperdiet purus id, dapibus ipsum. Duis pulvinar scelerisque ligula ut congue. Ut massa purus, imperdiet imperdiet convallis sit amet, posuere in libero. Phasellus porttitor, est nec ornare aliquet, ante libero semper turpis, vel ornare urna sapien quis massa.")
 Post.create(title: "SECOND", body: "Fusce condimentum eleifend venenatis. Vivamus blandit, libero vitae dictum tempus, ipsum elit luctus ligula, vel lacinia nisi purus sit amet nisi. Sed a consequat enim. Maecenas arcu dolor, interdum vitae lobortis vel, viverra cursus est. Donec ultrices magna ut lacinia vulputate. Vivamus tincidunt sit amet diam et ornare. Curabitur ut tristique ante. Suspendisse ligula sem, venenatis non orci eu, porta dignissim neque. Fusce at consectetur diam. Nulla facilisi. Sed neque nulla, vehicula et odio a, accumsan ullamcorper odio. Mauris posuere rhoncus turpis, eu luctus ex elementum id. Curabitur nulla felis, tristique fringilla gravida accumsan, tincidunt non odio. Nulla eget sapien lorem. Quisque sodales, purus non aliquam venenatis, tortor diam dignissim turpis, in fermentum dolor dui ut metus.")
@@ -33,3 +41,13 @@ Show.create(what: "DMG", where: "ROOFTOP - NEW YORK", when: DateTime.now, how: "
 Show.create(what: "DMG", where: "EXAMPLE OF PLACE WITH LONG NAME - LONDON", when: DateTime.now, how: "www.google.com")
 Show.create(what: "DMG", where: "ROOFTOP - NEW YORK", when: DateTime.now, how: "www.google.com")
 Show.create(what: "AMAN", where: "ROOFTOP - NEW YORK", when: DateTime.now, how: "www.google.com")
+
+Tool.create(link: 'google.com', text: 'IBANEZ')
+Tool.create(link: 'google.com', text: 'MORLEY')
+Tool.create(link: 'google.com', text: 'THIRD TOOL')
+Tool.create(link: 'google.com', text: 'BANDCAMP')
+
+Gallery.create(name: 'Live')
+Gallery.create(name: 'Studio')
+Gallery.create(name: 'Life')
+Gallery.create(name: 'On The Road')
