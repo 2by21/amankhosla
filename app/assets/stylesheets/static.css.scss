@@ -276,8 +276,6 @@ body, html {
   margin:0 50px 0 50px;
 }
 
-
-
 #video-prev-img, #video-nxt-img{
   width: 40px;
 }
@@ -305,6 +303,31 @@ body, html {
 
 .tab-content {
   display: none;
+  height: 70vh;
+  height: 400px;
+}
+
+.active-tab-link::before {
+  font-family: 'SackersGothic';
+  content: "(";
+  font-size: 12px;
+}
+
+.active-tab-link:after {
+  font-family: 'SackersGothic';
+  content: ")";
+  font-size: 12px;
+}
+
+.tab-link #other-projects {
+  font-size: 12px;
+  color: black;
+  text-decoration: none;
+  font-family: 'SackersGothic';
+}
+
+.tab-link-ul .tab-link {
+  text-align: center;
 }
 
 .active-tab {
@@ -319,8 +342,6 @@ body, html {
 
 #section8 ul li {
   list-style-type: none;
-  float: left;
-  margin-right: 100px;
 }
 
 #section10 .table thead tr th {
@@ -332,6 +353,10 @@ body, html {
 #section10 .table tbody tr td {
   font-weight: lighter;
   text-align: center;
+}
+
+#shows{
+  display: block; position: relative; right: -450px; visibility: hidden;
 }
 
 #video-title {
@@ -358,6 +383,7 @@ body, html {
 
 .gallery-li {
   margin-right: 0 !important;
+  float: left;
 }
 
 .modal-footer {
@@ -367,7 +393,65 @@ body, html {
 .modal-backdrop.in {
   opacity: 0.9 !important;
 }
-#shows{
-  display: block; position: relative; right: -450px; visibility: hidden;
+
+ul.social-links {
+  position: relative;
+  left: -6px;
 }
 
+ul.social-links li {
+  float: left;
+}
+
+ul.social-links li img {
+  width: 30px;
+  height: auto;
+}
+
+.social-icon {
+  background-repeat:no-repeat;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+#facebook-icon {
+  background-image: image-url("FB.png");
+}
+
+#facebook-icon:hover {
+  background-image: image-url("FB_Hover.png");
+}
+
+#twitter-icon {
+  background-image: image-url("Twitter.png");
+}
+
+#twitter-icon:hover {
+  background-image: image-url("Twitter_Hover.png");
+}
+
+#youtube-icon {
+  background-image: image-url("YouTube.png");
+}
+
+#youtube-icon:hover {
+  background-image: image-url("YouTube_Hover.png");
+}
+
+#bandcamp-icon {
+  background-image: image-url("Bandcamp.png");
+}
+
+#bandcamp-icon:hover {
+  background-image: image-url("Bandcamp_Hover.png");
+}
+
+#email-icon {
+  background-image: image-url("Email.png");
+}
+
+#email-icon:hover {
+  background-image: image-url("Email_Hover.png");
+}
