@@ -1,0 +1,17 @@
+<h1>Youtube Videos</h1>
+
+<ul>
+  <% @videos.each do |video| %>
+    <li>
+      <div>Title: <%= link_to video.title, video %></div>
+      <div>Body: <%= video.body %></div>
+      <div>Link: <%= video.link %></div>
+      <%= link_to 'Edit', edit_video_path(video) %>
+      <%= link_to 'Destroy', video, method: :delete %>
+    </li>
+          <br/>
+
+  <% end %>
+</ul>
+
+<%= link_to 'New Video', new_video_path %>

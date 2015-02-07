@@ -1,4 +1,10 @@
 class VideosController < ApplicationController
+  layout 'admin_layout'
+  before_action :authenticate
+  def index
+    @videos = Video.all
+  end
+
   def new
     @video = Video.new
   end

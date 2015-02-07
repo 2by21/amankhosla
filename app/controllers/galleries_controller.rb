@@ -1,4 +1,10 @@
 class GalleriesController < ApplicationController
+  layout 'admin_layout'
+  before_action :authenticate
+
+  def index
+    @galleries = Gallery.all
+  end
 
   def new
     @gallery = Gallery.new

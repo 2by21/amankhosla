@@ -1,4 +1,9 @@
 class ProjectsController < ApplicationController
+  layout 'admin_layout'
+  before_action :authenticate
+  def index
+    @projects = Project.all
+  end
 
   def new
     @project = Project.new
