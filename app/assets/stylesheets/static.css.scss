@@ -13,6 +13,32 @@
     padding: 0;
 }
 
+.landing{
+  background: url(landing_page.png) top left no-repeat;
+  background-size: cover;
+  height: 100vh;
+  font-family: 'SackersGothic';
+}
+.landing-links-div{
+  bottom: 0;
+  right: 0;
+  position: fixed;
+}
+
+.landing-links-list {
+  li{
+    display: inline;
+    padding: 0 15px 0 15px;
+  }
+  a{
+    color:grey;
+  }
+  a:hover{
+    color:black;
+    text-decoration: none;
+  }
+}
+
 body.sidescroll {
   width: 12000px;
   height: 100vh;
@@ -250,8 +276,6 @@ body, html {
   margin:0 50px 0 50px;
 }
 
-
-
 #video-prev-img, #video-nxt-img{
   width: 40px;
 }
@@ -349,6 +373,10 @@ body, html {
 #section10 .table tbody tr td {
   font-weight: lighter;
   text-align: center;
+}
+
+#shows{
+  display: block; position: relative; right: -450px; visibility: hidden;
 }
 
 #video-title {
