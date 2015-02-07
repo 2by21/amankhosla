@@ -88,6 +88,8 @@ $ ->
   # Tabs coffescript
 
   $('.tab-link').click (e) ->
+    $('.tab-link').removeClass('active-tab-link')
+    $(this).addClass('active-tab-link')
     $('.tab-content').removeClass('active-tab')
     clicked_tab = $(this).data('tab')
     $('#' + clicked_tab).addClass('active-tab')

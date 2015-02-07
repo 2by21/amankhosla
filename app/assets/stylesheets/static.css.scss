@@ -283,6 +283,18 @@ body, html {
   height: 400px;
 }
 
+.active-tab-link::before {
+  font-family: 'SackersGothic';
+  content: "(";
+  font-size: 12px;
+}
+
+.active-tab-link:after {
+  font-family: 'SackersGothic';
+  content: ")";
+  font-size: 12px;
+}
+
 .tab-link #other-projects {
   font-size: 12px;
   color: black;
