@@ -9,6 +9,7 @@ class StaticController < ApplicationController
     @tools = Tool.all
     @galleries = Gallery.all
     @projects = Project.all
+    @clinics = Clinic.all
     links = Link.all.order('created_at DESC')
     @link1 = links[0]
     @link2 = links[1]
