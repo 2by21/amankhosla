@@ -73,6 +73,9 @@ $ ->
     src = $(this).data('original')
     $(this).parent().parent().parent().siblings('.modal-body').children('img').attr('src', src)
 
+  $('.x-button').click ->
+    $('.modal').modal('hide')
+    
   # video coffeescript
 
   $('.video').click (event) ->
