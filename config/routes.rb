@@ -17,6 +17,7 @@ Rails.application.routes.draw do
     resources :images
   end
   resources :projects
+  resources :clinics
 
   get '/posts/surrounding/:id' => 'posts#surrounding'
 
