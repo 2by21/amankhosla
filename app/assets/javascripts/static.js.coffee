@@ -103,6 +103,19 @@ $ ->
     unless $('#section6 ol#pagination .next').css('display') == 'none'
       $('#section6 ol#pagination .next').click()
 
+  #slider
+  options =
+    $AutoPlay: true
+    $FillMode: 2
+    $ThumbnailNavigatorOptions:
+      $Class: $JssorThumbnailNavigator$
+      $ChanceToShow: 2
+      $DisplayPieces: 10
+
+  jssor_slider0 = new $JssorSlider$('slider0_container', options)
+  jssor_slider1 = new $JssorSlider$('slider1_container', options)
+  jssor_slider2 = new $JssorSlider$('slider2_container', options)
+  jssor_slider3 = new $JssorSlider$('slider3_container', options)
 
   #shows/clinics tables coffeescript
   $('.table').DataTable({
