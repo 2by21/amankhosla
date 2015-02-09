@@ -104,8 +104,6 @@ $ ->
       $('#section6 ol#pagination .next').click()
 
 
-
-
   #shows/clinics tables coffeescript
   $('.table').DataTable({
     autoWidth: false
@@ -113,3 +111,9 @@ $ ->
     scrollY: "350px"
     searching: false
   })
+
+  $('.clinics-table').hide()
+
+  $('#shows-link, #clinics-link').click ->
+    $('.clinics-table').toggle()
+    $('.shows-table').toggle()

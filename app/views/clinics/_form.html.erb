@@ -1,4 +1,17 @@
 <%= form_for @clinic do |f| %>
+<% if @clinic.errors.any? %>
+    <div id="error_explanation">
+    <h2>
+      <%= pluralize(@clinic.errors.count, "error") %>
+      prohibited this form from being saved:
+    </h2>
+      <ul>
+        <% @clinic.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+<% end %>
   <%= f.label :what %></br>
   <%= f.text_field :what %></br>
 

@@ -1,6 +1,19 @@
 <h1> Edit Bio </h1>
 <br/>
 <%= form_for @bio do |f| %>
+<% if @bio.errors.any? %>
+    <div id="error_explanation">
+    <h2>
+      <%= pluralize(@bio.errors.count, "error") %>
+      prohibited this form from being saved:
+    </h2>
+      <ul>
+        <% @bio.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+<% end %>
   <%= f.label :text %><br>
   <%= f.text_area :text %><br>
   <br>

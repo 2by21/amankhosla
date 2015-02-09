@@ -141,7 +141,32 @@
         <div id="shows-link"></div> <div id="slash-link" src="assets/Slash-05.png"></div> <div id="clinics-link" src="assets/Shows-04.png"></div>
     </div>
 
-    <table class="table">
+    <div class="shows-wrapper">
+        <table class="table shows-table">
+            <thead>
+                <tr>
+                    <th>WHAT</th>
+                    <th>WHERE</th>
+                    <th>WHEN</th>
+                    <th>HOW</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% @shows.each do |show| %>
+                    <tr>
+                        <td><%= show.what %></td>
+                        <td><%= show.where %></td>
+                        <td><%= show.when.strftime("%m/%d/%y %H%p") %></td>
+                        <td><a href="<%= show.how %>">BUY</a></td>
+                    </tr>
+                <% end %>
+            </tbody>
+
+        </table>
+    </div>
+
+    <div class="clinics-wrapper">
+       <table class="table clinics-table">
         <thead>
             <tr>
                 <th>WHAT</th>
@@ -151,15 +176,17 @@
             </tr>
         </thead>
         <tbody>
-            <% @shows.each do |show| %>
+            <% @clinics.each do |c| %>
                 <tr>
-                    <td><%= show.what %></td>
-                    <td><%= show.where %></td>
-                    <td><%= show.when.strftime("%m/%d/%y %H%p") %></td>
-                    <td><a href="<%= show.how %>">BUY</a></td>
+                    <td><%= c.what %></td>
+                    <td><%= c.where %></td>
+                    <td><%= c.when.strftime("%m/%d/%y %H%p") %></td>
+                    <td><a href="<%= c.how %>">BUY</a></td>
                 </tr>
             <% end %>
         </tbody>
-    </table>
+        </table>
+    </div>
 
 </div>
+
