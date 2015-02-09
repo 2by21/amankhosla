@@ -106,7 +106,6 @@ $ ->
     unless $('#section6 ol#pagination .next').css('display') == 'none'
       $('#section6 ol#pagination .next').click()
 
-
   #slider
   options =
     $AutoPlay: true
@@ -121,7 +120,6 @@ $ ->
   jssor_slider2 = new $JssorSlider$('slider2_container', options)
   jssor_slider3 = new $JssorSlider$('slider3_container', options)
 
-
   #shows/clinics tables coffeescript
   $('.table').DataTable({
     autoWidth: false
@@ -129,3 +127,9 @@ $ ->
     scrollY: "350px"
     searching: false
   })
+
+  $('.clinics-table').hide()
+
+  $('#shows-link, #clinics-link').click ->
+    $('.clinics-table').toggle()
+    $('.shows-table').toggle()

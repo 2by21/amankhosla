@@ -1,5 +1,7 @@
 class Post < ActiveRecord::Base
 
+  validates_presence_of :title, :body
+
   # def surrounding
   #   if self.previous.nil?
   #     @prev_post = self
