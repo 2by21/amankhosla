@@ -1,0 +1,125 @@
+body, html {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.section1 {
+  background-image: image-url('opening_image.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  border-bottom: 1px solid black;
+}
+
+.down-arrow {
+  position: relative;
+  top: 80vh;
+}
+
+.down-arrow img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.now-title {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*POSTS CSS*/
+
+.section2 {
+  width: 100%;
+}
+
+.post-container ul {
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+.post-container #ul-posts-list li {
+  list-style-type: none;
+}
+
+.post-container ul li p {
+  text-align: justify;
+  overflow: scroll;
+  height: 30vh;
+  width: 100%;
+}
+
+.post-title {
+  text-align: left;
+  float: left;
+  font-family: 'SackersGothic';
+  font-size: 20px;
+  font-size: 4vw;
+}
+
+.post-date {
+  text-align: right;
+  float: right;
+  font-family: 'SackersGothic';
+  font-size: 15px;
+  font-size: 4vw;
+}
+
+.section3 {
+  background-image: image-url('monkey_music_bg.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 2000px;
+}
+
+.section4 {
+  background-image: image-url('videos_bg.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 1600px;
+  margin-top: 5px;
+}
+
+#music-links {
+  position: relative;
+  top: 40%;
+}
+
+#music-links li {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+#music-links li img {
+  width: 200px;
+}
+
+#video-title {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50vw;
+  position: relative;
+  top: 50px;
+}
+
+.section5 {
+  background-image: image-url('bio_bg.png');
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 1600px;
+  margin-top: -30px;
+}
+
+.section6 {
+  background-image: image-url('shows_clinics_bg.png');
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1600px;
+}

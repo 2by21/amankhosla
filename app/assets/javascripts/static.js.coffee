@@ -109,7 +109,7 @@ $ ->
   #slider
   options =
     $AutoPlay: true
-    $FillMode: 2
+    $FillMode: 1
     $ThumbnailNavigatorOptions:
       $Class: $JssorThumbnailNavigator$
       $ChanceToShow: 2

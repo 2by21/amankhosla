@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Aman</title>
+  <%= stylesheet_link_tag    'mobile' %>
+  <%= javascript_include_tag 'mobile' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12" style="height: 100vh;">
+        <div class="section1">
+          <div class="down-arrow"><%= image_tag 'down_arrow_black.png' %></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="section2">
+          <%= image_tag 'now_mobile.png', class: 'now-title' %>
+
+          <div class="post-container">
+              <ul>
+                <li id="1st">
+                  <div class="post-title-and-date">
+                    <h3 class="post-title"></h3>
+                    <h3 class="post-date"></h3>
+                  </div>
+                  <p class="post-body"></p>
+                </li>
+              </ul>
+
+              <div class="post-selector-container">
+                <span id="post-prev"><img id="post-prev-img" src="assets/post-left.png"/></span>
+                <ul id="ul-posts-list"></ul>
+                <span id="post-nxt"><img id="post-prev-img" src="assets/post-left.png" style="-webkit-transform: rotate(180deg);"/></span>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="section3">
+          <ul id="music-links">
+            <li><a href="<%= @link1.url %>"><img src="assets/1-FoN.png"/></a></li>
+            <li><a href="<%= @link2.url %>"><img src="assets/2-IM.png"/></a></li>
+            <li><a href="<%= @link3.url %>"><img src="assets/3-SS.png"/></a></li>
+            <li><a href="<%= @link4.url %>"><img src="assets/4-L.png"/></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="section4">
+          <%= image_tag 'video_title.png', id: 'video-title' %>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="section5">
+          <ul class="tabs">
+            <li>(Bio)</li>
+            <li>(Photo)</li>
+            <li>(Tools)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="section6">
+          
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
+
+
