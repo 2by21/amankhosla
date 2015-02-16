@@ -1,6 +1,7 @@
 #= require jquery
 #= require jquery_ujs
 #= require bootstrap-sprockets
+#= require easypaginate
 
 $ ->
   $.ajax({
@@ -31,4 +32,26 @@ $ ->
       #   unless $('#section2 ol#pagination .next').css('display') == 'none'
       #     $('#section2 ol#pagination .next').click()
 
-    })
+  })
+
+  $('.video').click (event) ->
+    console.log 'clicked'
+    youtube = "//www.youtube.com/embed/"
+    video_id = $(this).data('url')
+    title = $(this).data('title')
+    body = $(this).data('body')
+
+    $('#video-frame').attr('src', youtube+video_id)
+    $('#video-title').text(title)
+    $('#video-body').text(body)
+
+  $('.video-preview-ul').easyPaginate({
+    step: 3
+  })
+
+  $('#video-prev').click ->
+    unless $('.section4 ol#pagination .prev').css('display') == 'none'
+      $('.section4 ol#pagination .prev').click()
+  $('#video-nxt').click ->
+    unless $('.section4 ol#pagination .next').css('display') == 'none'
+      $('.section4 ol#pagination .next').click()

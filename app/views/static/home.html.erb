@@ -43,14 +43,14 @@
         </div>
     <% end %>
     
-     <span id="video-prev"><img id="video-prev-img" src="assets/video-left.png"/></span>
-        <ul class="video-preview-ul">
-        <% @videos.each do |video| %>
-            <li class="video col-sm-3" data-url="<%= video.link %>" data-title="<%= video.title %>" data-body="<%= video.body %>">
-                <img class="video-preview" src="http://img.youtube.com/vi/<%= video.link %>/0.jpg"/>
-                <p><%= video.title %></p>
-            </li>
-        <% end %>
+    <span id="video-prev"><img id="video-prev-img" src="assets/video-left.png"/></span>
+    <ul class="video-preview-ul">
+    <% @videos.each do |video| %>
+        <li class="video col-sm-3" data-url="<%= video.link %>" data-title="<%= video.title %>" data-body="<%= video.body %>">
+            <img class="video-preview" src="http://img.youtube.com/vi/<%= video.link %>/0.jpg"/>
+            <p><%= video.title %></p>
+        </li>
+    <% end %>
     </ul>
     <span id="video-nxt"><img id="video-nxt-img" src="assets/video-right.png"/></span>
 

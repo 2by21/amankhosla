@@ -21,10 +21,9 @@ class StaticController < ApplicationController
 
   def welcome
     if is_mobile_device?
-      redirect_to home_path
-    else
-      render layout: 'landing'
+      redirect_to home_path and return
     end
+    render layout: 'landing' and return
   end
 
   private
