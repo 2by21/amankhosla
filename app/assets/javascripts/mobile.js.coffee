@@ -55,3 +55,26 @@ $ ->
   $('#video-nxt').click ->
     unless $('.section4 ol#pagination .next').css('display') == 'none'
       $('.section4 ol#pagination .next').click()
+
+
+  #photo gallery coffeescript
+  $('.gallery-photo').click ->
+    id = "#gallery-" + $(this).data('gallery')
+    $('.modal' + id).modal()
+
+  $('.gallery-li img').click ->
+    src = $(this).data('original')
+    $(this).parent().parent().parent().siblings('.modal-body').children('img').attr('src', src)
+
+  $('.x-button').click ->
+    $('.modal').modal('hide')
+
+  # tools, photos tabs
+  $('.tab-link').click (e) ->
+    console.log 'clicked tab-link'
+    $('.tab-link').removeClass('active-tab-link')
+    $(this).addClass('active-tab-link')
+    $('.tab-content').removeClass('active-tab')
+    clicked_tab = $(this).data('tab')
+    console.log clicked_tab
+    $('#' + clicked_tab).addClass('active-tab')
