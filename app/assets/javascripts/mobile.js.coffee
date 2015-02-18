@@ -79,14 +79,19 @@ $ ->
   #slider
   options =
     $FillMode: 1
+    $ThumbnailNavigatorOptions:
+      $Class: $JssorThumbnailNavigator$
+      $ChanceToShow: 2
+      $DisplayPieces: 10
 
   jssor_slider0 = new $JssorSlider$('slider0_container', options)
   jssor_slider1 = new $JssorSlider$('slider1_container', options)
   jssor_slider2 = new $JssorSlider$('slider2_container', options)
   jssor_slider3 = new $JssorSlider$('slider3_container', options)
 
+
   # tools, photos tabs
-  $('.tab-link').click (e) ->
+  $('.tab-link').tap (e) ->
     e.preventDefault()
     console.log 'clicked tab-link'
     $('.tab-link').removeClass('active-tab-link')
@@ -95,4 +100,3 @@ $ ->
     clicked_tab = $(this).data('tab')
     console.log clicked_tab
     $('#' + clicked_tab).addClass('active-tab')
-    alert 'clicked!'
