@@ -1,9 +1,26 @@
 @import "bootstrap";
 
+@font-face {
+    font-family: 'SackersGothic';
+    src: asset-url('SackersGothic.eot');
+    src: asset-url('SackersGothic.eot?iefix') format('eot'),
+         asset-url('SackersGothic.woff') format('woff'),
+         asset-url('SackersGothic.ttf') format('truetype'),
+         asset-url('SackersGothic.svg#webfont') format('svg');
+}
+
 body, html {
   width: 100%;
   margin: 0;
   padding: 0;
+}
+
+.col-sm-12 {
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
 }
 
 .section1 {
@@ -12,6 +29,7 @@ body, html {
   background-repeat: no-repeat;
   background-position: center center;
   height: 100vh;
+  border-bottom: 1px solid black;
 }
 
 .down-arrow {
@@ -52,20 +70,26 @@ body, html {
   width: 100%;
 }
 
+.post-title-and-date {
+  margin-bottom: 20px;
+}
+
 .post-title {
   text-align: left;
   float: left;
   font-family: 'SackersGothic';
   font-size: 20px;
-  font-size: 4vw;
+  font-size: 3vw;
+  width: 65%;
+  margin: 0;
 }
 
 .post-date {
-  text-align: right;
-  float: right;
   font-family: 'SackersGothic';
+  text-align: right;
   font-size: 15px;
-  font-size: 4vw;
+  font-size: 1.3vw;
+  margin: 0;
 }
 
 .section3 {
@@ -116,6 +140,17 @@ body, html {
   height: 1600px;
   margin-top: -30px;
   padding-top: 500px;
+  padding-left: 110px;
+  padding-right: 40px;
+}
+
+#bio {
+  text-align: left;
+}
+
+.tab-link-ul {
+  list-style-type: none;
+  font-size: 4vw;
 }
 
 .section6 {
@@ -124,6 +159,8 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
   height: 1600px;
+  border-top: 5px solid grey;
+  text-align: center;
 }
 
 #video-frame {
@@ -149,12 +186,9 @@ li.video {
   } 
 }
 
-
-
-
 .tab-content {
   display: none;
-  height: 70vh;
+  height: 80vh;
   height: 400px;
   padding-right: 35px;
 }
@@ -214,4 +248,134 @@ li.video {
 
 .active-tab {
   display: block !important;
+}
+
+.gallery-photo {
+  width: 100%;
+  cursor: pointer;
+}
+
+#slider0_container, #slider1_container, #slider2_container, #slider3_container {
+  width: 100% !important;
+}
+
+.modal-backdrop.in {
+  opacity: 0.9 !important;
+}
+
+.modal-body {
+  padding: 0 !important;
+}
+
+.jssort01 .w {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+.jssort01 .c {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 68px;
+    height: 68px;
+    border: #000 2px solid;
+}
+.jssort01 .p:hover .c, .jssort01 .pav:hover .c, .jssort01 .pav .c {
+    background: url(../img/t01.png) center center;
+    border-width: 0px;
+    top: 2px;
+    left: 2px;
+    width: 68px;
+    height: 68px;
+}
+.jssort01 .p:hover .c, .jssort01 .pav:hover .c {
+    top: 0px;
+    left: 0px;
+    width: 70px;
+    height: 70px;
+    border: #fff 1px solid;
+}
+
+
+.c {
+  border: none !important;
+}
+
+ul.social-links {
+  display: inline-block;
+  padding-left: 0;
+
+}
+
+ul.social-links li {
+  float: left;
+}
+
+ul.social-links li img {
+  width: 30px;
+  height: auto;
+}
+
+#shows_clinics {
+  text-align: center;
+  font-family: 'SackersGothic';
+  font-size: 60px;
+  margin-bottom: 50px;
+}
+
+#shows_and_social {
+  position: relative;
+  top: 70%;
+}
+
+.social-icon {
+  background-repeat:no-repeat;
+  background-size: cover;
+  width: 8vw;
+  height: 8vw;
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+}
+
+#facebook-icon {
+  background-image: image-url("FB.png");
+}
+
+#facebook-icon:hover {
+  background-image: image-url("FB_Hover.png");
+}
+
+#twitter-icon {
+  background-image: image-url("Twitter.png");
+}
+
+#twitter-icon:hover {
+  background-image: image-url("Twitter_Hover.png");
+}
+
+#youtube-icon {
+  background-image: image-url("YouTube.png");
+}
+
+#youtube-icon:hover {
+  background-image: image-url("YouTube_Hover.png");
+}
+
+#bandcamp-icon {
+  background-image: image-url("Bandcamp.png");
+}
+
+#bandcamp-icon:hover {
+  background-image: image-url("Bandcamp_Hover.png");
+}
+
+#email-icon {
+  background-image: image-url("Email.png");
+}
+
+#email-icon:hover {
+  background-image: image-url("Email_Hover.png");
 }

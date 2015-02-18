@@ -126,7 +126,7 @@
                             </div>
 
                             <!-- Slides Container -->
-                            <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 800px; height: 356px; overflow: hidden;">
+                            <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 100%; height: 356px; overflow: hidden;">
                               <% gallery.images.each do |image| %>
                                 <div>
                                   <img u="image" src="<%= image.photo.url(:original) %>"/>
@@ -176,7 +176,17 @@
     <div class="row">
       <div class="col-sm-12">
         <div class="section6">
-          
+          <div id="shows_and_social">
+            <h1 id="shows_clinics">SHOWS  /  CLINICS</h1>
+
+            <ul class="social-links">
+              <a href="#"><li id="facebook-icon" class="social-icon"></li></a>
+              <a href="#"><li id="twitter-icon" class="social-icon"></li></a>
+              <a href="#"><li id="youtube-icon" class="social-icon"></li></a>
+              <a href="#"><li id="bandcamp-icon" class="social-icon"></li></a>
+              <a href="#"><li id="email-icon" class="social-icon"></li></a>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
