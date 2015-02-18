@@ -154,6 +154,11 @@ ul li {
   list-style-type: none;
   font-size: 4vw;
   padding: 0;
+  text-align: center !important;
+}
+
+.tab-link {
+  text-align: center !important;
 }
 
 .section6 {
@@ -194,10 +199,6 @@ li.video {
   height: 80vh;
   height: 400px;
   padding-right: 35px;
-}
-
-.tab-link {
-  text-align: left !important;
 }
 
 .tab-link a {
