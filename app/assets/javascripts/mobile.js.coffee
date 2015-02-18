@@ -87,6 +87,7 @@ $ ->
 
   # tools, photos tabs
   $('.tab-link').click (e) ->
+    e.preventDefault()
     console.log 'clicked tab-link'
     $('.tab-link').removeClass('active-tab-link')
     $(this).addClass('active-tab-link')
@@ -94,4 +95,3 @@ $ ->
     clicked_tab = $(this).data('tab')
     console.log clicked_tab
     $('#' + clicked_tab).addClass('active-tab')
-    false
