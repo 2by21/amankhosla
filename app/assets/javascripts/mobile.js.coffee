@@ -17,14 +17,13 @@ $ ->
       $('#1st .post-date').text(data[0]['formatted_date'])
 
       for post, index in data
-        post_data = "<li data-index='" + index + "' data-body='" + post['body'] + "' data-date='" + post['formatted_date'] + "' data-title='" + post['title'] + "' class='post-selector-li'><h3 class='js-post'><span class='list-post-title'>" + post['title'] + "</span> <span class='list-post-date'>" + post['formatted_date'] + "</span></h3></li>"
+        post_data = "<li data-index='" + index + "' data-body='" + post['body'] + "' data-date='" + post['formatted_date'] + "' data-title='" + post['title'] + "' class='post-selector-li'><h3 class='js-post'><span class='list-post-title'>" + post['title'] + "</span></h3></li>"
         $('#ul-posts-list').append(post_data)
 
       $('#ul-posts-list li').click ->
         body = $(this).data('body')
         title = $(this).data('title')
         formatted_date = $(this).data('formatted_date')
-        console.log $(this)
         $('#1st .post-title').text(title)
         $('#1st .post-body').text(body)
         $('#1st .post-date').text(formatted_date)
@@ -33,12 +32,12 @@ $ ->
         step: 3
       })
       
-      # $('#post-prev').click ->
-      #   unless $('#section2 ol#pagination .prev').css('display') == 'none'
-      #     $('#section2 ol#pagination .prev').click()
-      # $('#post-nxt').click ->
-      #   unless $('#section2 ol#pagination .next').css('display') == 'none'
-      #     $('#section2 ol#pagination .next').click()
+      $('#post-prev').click ->
+        unless $('#section2 ol#pagination .prev').css('display') == 'none'
+          $('#section2 ol#pagination .prev').click()
+      $('#post-nxt').click ->
+        unless $('#section2 ol#pagination .next').css('display') == 'none'
+          $('#section2 ol#pagination .next').click()
 
   })
 

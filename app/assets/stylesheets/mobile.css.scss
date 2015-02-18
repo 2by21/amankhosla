@@ -72,6 +72,7 @@ ul li {
 
 .post-title-and-date {
   margin-bottom: 20px;
+  font-family: 'SackersGothic';
 }
 
 .post-title {
@@ -146,11 +147,13 @@ ul li {
 
 #bio {
   text-align: left;
+  height: 55%;
 }
 
 .tab-link-ul {
   list-style-type: none;
   font-size: 4vw;
+  padding: 0;
 }
 
 .section6 {
@@ -379,3 +382,26 @@ ul.social-links li img {
 #email-icon:hover {
   background-image: image-url("Email_Hover.png");
 }
+
+.list-video-title {
+  color: white;
+}
+
+.black a {
+  color: black;
+}
+
+.white a {
+  color: grey;
+}
+
+.tools {
+  text-align: center;
+  font-size: 50px;
+  /*font-size: 5vw;*/
+}
+
+#tools ul {
+  padding: 0;
+}
+

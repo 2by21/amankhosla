@@ -64,8 +64,6 @@
           <% if @video %>
             <div class='video-detail-wrapper'>
               <iframe id="video-frame" width="75%" height="550px" src="//www.youtube.com/embed/<%= @video.link %>" frameborder="0" allowfullscreen></iframe>
-              <h1 id="video-title"><%= @video.title %></h1>
-              <p id="video-body"><%= @video.body %></p>
             </div>
           <% end %>
 
@@ -74,7 +72,7 @@
           <% @videos.each do |video| %>
             <li class="video col-sm-3" data-url="<%= video.link %>" data-title="<%= video.title %>" data-body="<%= video.body %>">
               <img class="video-preview" src="http://img.youtube.com/vi/<%= video.link %>/0.jpg"/>
-              <p><%= video.title %></p>
+              <p class="list-video-title"><%= video.title %></p>
             </li>
           <% end %>
           </ul>

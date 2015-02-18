@@ -17,7 +17,10 @@
 //= require dataTables/jquery.dataTables
 //= require bootstrap-sprockets
 //= require easypaginate
+//= require jssor
 //= require jssor.slider
+//= require static
 
+//= require base
 //= require_tree ./utilities
 //= require_tree ./elements
