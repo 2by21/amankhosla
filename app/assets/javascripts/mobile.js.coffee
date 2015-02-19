@@ -100,3 +100,8 @@ $ ->
     clicked_tab = $(this).data('tab')
     console.log clicked_tab
     $('#' + clicked_tab).addClass('active-tab')
+
+
+  $('.down-arrow img').click (e) ->
+    $(this).fadeOut "slow", (e) ->
+      $('#cheeky-message').fadeIn("slow")

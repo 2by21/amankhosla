@@ -23,6 +23,12 @@ ul li {
   list-style-type: none;
 }
 
+#cheeky-message {
+  font-size: 45px;
+  text-align: center;
+  font-family: 'SackersGothic';
+}
+
 .section1 {
   background-image: image-url('opening_image.png');
   background-size: cover;
@@ -151,6 +157,7 @@ ul li {
   width: 50vw;
   position: relative;
   top: 50px;
+  margin-bottom: 200px;
 }
 
 .section5 {
