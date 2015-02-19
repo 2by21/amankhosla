@@ -24,7 +24,7 @@
           <%= image_tag 'now_mobile.png', class: 'now-title' %>
 
           <div class="post-container">
-              <ul>
+              <ul class="post-display">
                 <li id="1st">
                   <div class="post-title-and-date">
                     <h3 class="post-title"></h3>
@@ -35,9 +35,9 @@
               </ul>
 
               <div class="post-selector-container">
-                <span id="post-prev"><img id="post-prev-img" src="assets/post-left.png"/></span>
+                <span id="post-prev" class="table-cell"><img id="post-prev-img" src="assets/post-left.png"/></span>
                 <ul id="ul-posts-list"></ul>
-                <span id="post-nxt"><img id="post-prev-img" src="assets/post-left.png" style="-webkit-transform: rotate(180deg);"/></span>
+                <span id="post-nxt" class="table-cell"><img id="post-prev-img" src="assets/post-left.png" style="-webkit-transform: rotate(180deg);"/></span>
               </div>
           </div>
         </div>

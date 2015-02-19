@@ -53,14 +53,34 @@ ul li {
 
 .section2 {
   width: 100%;
+  padding-bottom: 100px;
+}
+
+.post-display {
+  margin-bottom: 50px;
+}
+
+.post-selector-li {
+  width: 25%;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.table-cell {
+  display: table-cell;
+  width: 7.5%;
+  text-align: center;
 }
 
 .post-container ul {
   padding-left: 10vw;
   padding-right: 10vw;
 }
+
 .post-container #ul-posts-list li {
   list-style-type: none;
+  float: left;
 }
 
 .post-container ul li p {
@@ -141,7 +161,6 @@ ul li {
   height: 1600px;
   margin-top: -30px;
   padding-top: 500px;
-  padding-left: 110px;
   padding-right: 40px;
 }
 
@@ -159,6 +178,8 @@ ul li {
 
 .tab-link {
   text-align: center !important;
+  display: table-cell;
+  width: 33%;
 }
 
 .section6 {
@@ -182,16 +203,24 @@ ul li {
   width: 100%;
 }
 
-li.video {
- width: 20%;
- display: inline-block;
+.video-preview-ul li {
+  list-style-type: none;
 }
 
 .video-preview-ul {
-  display: inline-block;
-  li{
-    list-style-type: none;
-  } 
+  position: absolute;
+  left: 100px;
+  margin-left: 30px;
+}
+
+#video-prev {
+  position: absolute;
+  left: 0px;
+}
+
+#video-nxt {
+  position: absolute;
+  right: 0px;
 }
 
 .tab-content {
@@ -199,6 +228,7 @@ li.video {
   height: 80vh;
   height: 400px;
   padding-right: 35px;
+  padding-left: 70px;
 }
 
 .tab-link a {
@@ -399,10 +429,29 @@ ul.social-links li img {
 .tools {
   text-align: center;
   font-size: 50px;
-  /*font-size: 5vw;*/
+  padding-top: 30px;
 }
 
 #tools ul {
   padding: 0;
 }
 
+#pagination {
+  display: none;
+}
+
+.ui-loader {
+  display: none;
+}
+
+.post-selector-container span {
+  position: absolute;
+}
+
+#post-prev {
+  left: 10px;
+}
+
+#post-nxt {
+  right: 0px;
+}
