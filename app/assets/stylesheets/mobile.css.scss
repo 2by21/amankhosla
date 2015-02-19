@@ -57,6 +57,10 @@ ul li {
 
 /*POSTS CSS*/
 
+.js-post {
+  text-align: center;
+}
+
 .section2 {
   width: 100%;
   padding-bottom: 100px;
@@ -461,4 +465,8 @@ ul.social-links li img {
 
 #post-nxt {
   right: 0px;
+}
+
+#photos .modal .modal-dialog {
+  top: 30vh;
 }

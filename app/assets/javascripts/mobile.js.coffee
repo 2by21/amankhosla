@@ -33,11 +33,11 @@ $ ->
       })
       
       $('#post-prev').click ->
-        unless $('#section2 ol#pagination .prev').css('display') == 'none'
-          $('#section2 ol#pagination .prev').click()
+        unless $('.section2 ol#pagination .prev').css('display') == 'none'
+          $('.section2 ol#pagination .prev').click()
       $('#post-nxt').click ->
-        unless $('#section2 ol#pagination .next').css('display') == 'none'
-          $('#section2 ol#pagination .next').click()
+        unless $('.section2 ol#pagination .next').css('display') == 'none'
+          $('.section2 ol#pagination .next').click()
 
   })
 
