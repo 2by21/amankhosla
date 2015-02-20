@@ -120,15 +120,15 @@ $ ->
   jssor_slider3 = new $JssorSlider$('slider3_container', options)
 
   #shows/clinics tables coffeescript
-  $('.table').DataTable({
+  $('.shows-table').DataTable({
     autoWidth: false
     paging: false
     scrollY: "350px"
     searching: false
   })
 
-  $('.clinics-table').hide()
+  $('.clinics-wrapper').hide()
 
   $('#shows-link, #clinics-link').click ->
-    $('.clinics-table').toggle()
-    $('.shows-table').toggle()
+    $('.clinics-wrapper').toggle()
+    $('.shows-wrapper').toggle()
