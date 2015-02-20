@@ -51,7 +51,7 @@ $ ->
         switch_posts(data, current_index)
       
       $('#archive-btn').click ->
-        $('.post-selector-container').show()
+        $('.post-selector-container').toggle()
 
       $('#ul-posts-list').easyPaginate()
       
