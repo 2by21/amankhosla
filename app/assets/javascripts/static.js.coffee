@@ -1,8 +1,9 @@
 $( window ).load ->
-  width = 0
-  $('.section').each ->
-    width += $(this).width()
-  $('body').width(width + 20)
+  if $('body').hasClass('sidescroll')
+    width = 0
+    $('.section').each ->
+      width += $(this).width()
+    $('body').width(width + 20)
 
 $ ->
   #post coffeescript
