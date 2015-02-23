@@ -1,3 +1,9 @@
+$( window ).load ->
+  width = 0
+  $('.section').each ->
+    width += $(this).width()
+  $('body').width(width + 100)
+
 $ ->
   #post coffeescript
   switch_posts = (data, index) ->
@@ -132,3 +138,6 @@ $ ->
   $('#shows-link, #clinics-link').click ->
     $('.clinics-wrapper').toggle()
     $('.shows-wrapper').toggle()
+
+  # $('body').width(width)
+
