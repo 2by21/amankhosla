@@ -340,6 +340,7 @@ body, html {
 
 .tab-link a:hover, .tab-link a:active {
   text-decoration: none;
+  cursor: pointer;
 }
 
 
@@ -484,6 +485,7 @@ body, html {
 #video-body {
   font-size: 1.9vh;
   overflow: scroll;
+  color: rgb(200, 200, 200);
 }
 
 .gallery-photo {
