@@ -96,6 +96,7 @@ body, html {
 	width: 1200px;
 	height: 100%;
 	overflow: hidden;
+  margin-right: -2%;
 }
 
 #section2 .post-selector-container {
@@ -103,6 +104,7 @@ body, html {
 }
 
 #section2 #archive-btn {
+  margin-top: 25px;
   width:3%;
   cursor: pointer;
 }
@@ -113,7 +115,7 @@ body, html {
   height: auto;
   width: 90px;
   margin: 0 auto;
-  margin-bottom: 60px;
+  margin-bottom: 35px;
 }
 
 #section2 .post-container {
@@ -126,6 +128,16 @@ body, html {
   width: 100%;
   padding-left: 35px;
   text-align: justify;
+}
+
+#section2 .post-container-ul li {
+  width: 23% !important;
+  margin-right: 10% !important;
+  float: left;
+}
+
+#section2 .post-container-ul {
+  padding-left: 10% !important;
 }
 
 #section2 .post-container ul li:not(.post-selector-li) {
