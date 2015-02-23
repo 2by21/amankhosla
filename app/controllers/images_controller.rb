@@ -14,6 +14,13 @@ class ImagesController < ApplicationController
     end
   end
 
+  def destroy
+    gallery = Gallery.find(params[:gallery_id])
+    image = Image.find(params[:id])
+    image.destroy
+    redirect_to gallery
+  end
+
   private
 
     def image_params

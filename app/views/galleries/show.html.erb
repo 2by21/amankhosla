@@ -4,5 +4,6 @@
 <br>
 <% @gallery.images.each do |image| %>
   <%= image_tag image.photo.url(:thumb) %>
+  <%= link_to 'Destroy', gallery_image_path(@gallery, image), method: :delete %>
 <% end %>
 
