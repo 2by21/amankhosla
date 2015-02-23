@@ -277,6 +277,10 @@ body, html {
   overflow-x: hidden;
 }
 
+.video:hover {
+  cursor: pointer;
+}
+
 .video-preview {
   height: auto;
   width: 100%;
@@ -288,12 +292,14 @@ body, html {
 
 #video-prev-img, #video-nxt-img{
   width: 40px;
+  position: relative;
+  left: -12px;
 }
 
 #video-prev, #video-nxt{
   width:50px;
-  display: inline-block;
-  vertical-align:middle;
+  display: relative !important;
+  left: -20px;
   cursor: pointer;
 }
 
@@ -373,6 +379,19 @@ body, html {
 
 .active-tab {
   display: block !important;
+}
+
+#section7, #section6 {
+  position: relative;
+}
+
+#section6 {
+  z-index: 0;
+}
+
+#section7 {
+  margin-left: -50px;
+  z-index: 2;
 }
 
 #section8 {
