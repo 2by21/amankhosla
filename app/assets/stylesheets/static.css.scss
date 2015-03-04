@@ -8,9 +8,18 @@
          asset-url('SackersGothic.svg#webfont') format('svg');
 }
 
+@font-face {
+  font-family: 'Sansumi-DemoBold';
+  src: asset-url('Sansumi-DemiBold.ttf') format('truetype');
+}
+
 * {
     margin: 0;
     padding: 0;
+}
+
+body {
+  font-family: 'Sansumi-DemoBold';
 }
 
 .landing{
@@ -54,7 +63,7 @@ body, html {
 
 .tools {
   font-family: 'SackersGothic';
-  font-size: 40px;
+  font-size: 25px;
   text-align: center;
   margin-right: 0 !important;
   float: none !important;
@@ -99,6 +108,13 @@ body, html {
   margin-right: -2%;
 }
 
+p.post-body {
+  height: 160px !important;
+  font-size: 9px !important;
+  text-align: left !important;
+  line-height: 15px;
+}
+
 #section2 .post-selector-container {
   display:none;
 }
@@ -130,12 +146,11 @@ body, html {
 
 #section2 .post-container-ul li {
   width: 23% !important;
-  margin-right: 10% !important;
   float: left;
 }
 
-#section2 .post-container-ul {
-  padding-left: 10% !important;
+.indi-post:nth-child(1), .indi-post:nth-child(2) {
+  margin-right: 13% !important;
 }
 
 #section2 .post-container ul li:not(.post-selector-li) {
@@ -282,12 +297,15 @@ body, html {
 }
 
 .video-preview {
+  -webkit-border-image: url("thumbnail_border.png") 25 30 10 20 repeat stretch;
+  border-image: url("thumbnail_border.png") 25 30 10 20 repeat stretch;
   height: auto;
   width: 100%;
 }
 
 .video-detail-wrapper{
   margin:0 50px 0 50px;
+  padding-top: 35px;
 }
 
 #video-prev-img, #video-nxt-img{
@@ -370,7 +388,8 @@ body, html {
 #bio {
   overflow-x: hidden;
   overflow-y: scroll;
-  font-family: 'Sansumi-DemiBold';
+  font-size: 10px;
+  line-height: 20px;
 }
 
 .tab-link-ul .tab-link {
@@ -483,9 +502,11 @@ body, html {
 }
 
 #video-body {
-  font-size: 1.9vh;
+  font-size: 1.6vh;
   overflow: scroll;
   color: rgb(200, 200, 200);
+  height: 50px;
+  line-height: 18px;
 }
 
 .gallery-photo {
@@ -511,7 +532,7 @@ body, html {
 }
 
 .modal-backdrop.in {
-  opacity: 0.9 !important;
+  opacity: 1.0 !important;
 }
 
 ul.social-links {
@@ -612,7 +633,8 @@ ul.social-links li img {
 }
 
 .modal-dialog {
-  margin-left: 220px !important;
+  margin-top: 80px !important;
+  margin-left: 170px !important;
 }
 
 .dataTables_info {
@@ -621,4 +643,34 @@ ul.social-links li img {
 
 .x-button:hover {
   cursor: pointer;
+}
+
+.slider div div {
+  background-color: black;
+}
+
+.c {
+  background-color: transparent !important;
+}
+
+/* Sink */
+.hvr-sink {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sink:hover, .hvr-sink:focus, .hvr-sink:active {
+  -webkit-transform: translateY(8px);
+  transform: translateY(8px);
 }

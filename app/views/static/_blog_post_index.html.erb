@@ -4,7 +4,7 @@
         <img id="now" src="assets/now.png"/>
         <ul class="post-container-ul">
             <% ['1st', '2nd', '3rd'].each do |post| %>
-                <li id="<%= post %>">
+                <li id="<%= post %>" class="indi-post">
                     <div class="post-title-and-date">
                         <h3 class="post-title"></h3>
                         <h3 class="post-date"></h3>
@@ -15,7 +15,7 @@
         </ul>
 
         <div>
-            <img id="archive-btn" src="assets/archive-btn.png"/>
+            <img id="archive-btn" class="hvr-sink" src="assets/archive-btn.png"/>
         </div>
 
         <div class="post-selector-container">
