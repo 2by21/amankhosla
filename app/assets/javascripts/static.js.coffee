@@ -147,5 +147,30 @@ $ ->
     $('.clinics-wrapper').toggle()
     $('.shows-wrapper').toggle()
 
+  $('#first-twinkle').hide()
+  $('#second-twinkle').hide()
+  $('#third-twinkle').hide()
+
+  $('.star').hover ->
+    $(this).fadeOut "fast", ->
+      console.log($(this))
+      if $(this).attr('id') == 'first-egg'
+        $('#first-twinkle').fadeIn 'slow', ->
+          $('#first-twinkle').fadeOut('fast')
+          $(this).fadeIn('slow')
+      else if $(this).attr('id') == 'second-egg'
+        $('#second-twinkle').fadeIn 'slow', ->
+          $('#second-twinkle').fadeOut('fast')
+          $(this).fadeIn('slow')
+      else
+        $('#third-twinkle').fadeIn 'slow', ->
+          $('#third-twinkle').fadeOut('fast')
+          $(this).fadeIn('slow')
+
+
+  # $('.down-arrow img').click (e) ->
+  #   $(this).fadeOut "slow", (e) ->
+  #     $('#cheeky-message').fadeIn("slow")
+
   # $('body').width(width)
 

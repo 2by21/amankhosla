@@ -1,0 +1,19 @@
+<%= form_for @egg do |f| %>
+<% if @egg.errors.any? %>
+  <div id="error_explanation">
+  <h2>
+    <%= pluralize(@egg.errors.count, "error") %>
+    prohibited this form from being saved:
+  </h2>
+    <ul>
+      <% @egg.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+  <%= f.label :link %></br>
+  <%= f.text_field :link %></br>
+  </br>
+  <%= f.submit %>
+<% end %>

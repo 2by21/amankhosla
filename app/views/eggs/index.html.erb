@@ -1,0 +1,11 @@
+<h1>Easter Eggs</h1>
+
+<%= link_to 'New Egg', new_egg_path %>
+<br><br>
+<% @eggs.each do |egg| %>
+  <p>
+    <%= link_to egg.link, egg %>
+    <%= link_to 'Edit', edit_egg_path(egg) %>
+    <%= link_to 'Destroy', egg, method: :delete %>
+  </p>
+<% end %>

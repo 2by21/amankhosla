@@ -669,6 +669,41 @@ ul.social-links li img {
   margin-right: 150px;
 }
 
+.star {
+  position: absolute;
+}
+
+#first-egg {
+  left:4000px;
+  top: 500px;
+}
+
+#second-egg {
+  left: 4200px;
+  top: 100px;
+}
+
+#third-egg {
+  left: 4500px;
+  top: 230px;
+}
+
+#first-twinkle {
+  position: absolute;
+  left: 4000px;
+  top: 500px;
+}
+#second-twinkle {
+  position: absolute;
+  left: 4200px;
+  top: 100px;
+}
+#third-twinkle {
+  position: absolute;
+  left: 4500px;
+  top: 230px;
+}
+
 /* Sink */
 .hvr-sink {
   display: inline-block;

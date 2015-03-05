@@ -10,6 +10,13 @@
 
 <div class="section" id="section4">
     <!-- <img class="image-scale" id="space1" src="assets/space1.png"/> -->
+    <%= link_to (image_tag 'star.png', class: 'star', id: 'first-egg'), Egg.first.link %>
+    <%= link_to (image_tag 'star.png', class: 'star', id: 'second-egg'), Egg.find(2).link %>
+    <%= link_to (image_tag 'star.png', class: 'star', id: 'third-egg'), Egg.find(3).link %>
+
+    <%= link_to (image_tag 'twinkle.png', id: 'first-twinkle'), Egg.first.link %>
+    <%= link_to (image_tag 'twinkle.png', id: 'second-twinkle'), Egg.find(2).link %>
+    <%= link_to (image_tag 'twinkle.png', id: 'third-twinkle'), Egg.find(3).link %>
 
     <div id="music-links">
         <ul>

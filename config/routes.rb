@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get '/home' => 'static#home', as: 'home'
 
   resources :posts
+  resources :eggs
   resources :videos
   resources :shows
   resources :links
