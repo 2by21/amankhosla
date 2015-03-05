@@ -14,9 +14,9 @@
     <%= link_to (image_tag 'star.png', class: 'star', id: 'second-egg'), Egg.find(2).link %>
     <%= link_to (image_tag 'star.png', class: 'star', id: 'third-egg'), Egg.find(3).link %>
 
-    <%= link_to (image_tag 'twinkle.png', id: 'first-twinkle'), Egg.first.link %>
-    <%= link_to (image_tag 'twinkle.png', id: 'second-twinkle'), Egg.find(2).link %>
-    <%= link_to (image_tag 'twinkle.png', id: 'third-twinkle'), Egg.find(3).link %>
+    <%= link_to (image_tag 'twinkle.png', id: 'first-twinkle', style: 'display: none;'), Egg.first.link %>
+    <%= link_to (image_tag 'twinkle.png', id: 'second-twinkle', style: 'display: none;'), Egg.find(2).link %>
+    <%= link_to (image_tag 'twinkle.png', id: 'third-twinkle', style: 'display: none;'), Egg.find(3).link %>
 
     <div id="music-links">
         <ul>
