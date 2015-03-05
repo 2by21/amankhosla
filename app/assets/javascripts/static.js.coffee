@@ -133,12 +133,7 @@ $ ->
     scrollY: "350px"
     searching: false
     bAutoWidth: false
-    aoColumns : [
-      { sWidth: '50px' },
-      { sWidth: '300px' },
-      { sWidth: '250px' },
-      { sWidth: '30px' }
-    ]  
+    aoColumns : [ { sWidth: '50px' }, { sWidth: '300px' }, { sWidth: '250px' }, { sWidth: '30px' } ]  
   })
 
   $('.clinics-wrapper').hide()
@@ -152,8 +147,8 @@ $ ->
   $('#third-twinkle').hide()
 
   $('.star').hover ->
+    console.log($(this))
     $(this).fadeOut "fast", ->
-      console.log($(this))
       if $(this).attr('id') == 'first-egg'
         $('#first-twinkle').fadeIn 'slow', ->
           $('#first-twinkle').fadeOut('fast')
@@ -167,10 +162,4 @@ $ ->
           $('#third-twinkle').fadeOut('fast')
           $(this).fadeIn('slow')
 
-
-  # $('.down-arrow img').click (e) ->
-  #   $(this).fadeOut "slow", (e) ->
-  #     $('#cheeky-message').fadeIn("slow")
-
-  # $('body').width(width)
 
