@@ -132,6 +132,13 @@ $ ->
     paging: false
     scrollY: "350px"
     searching: false
+    bAutoWidth: false
+    aoColumns : [
+      { sWidth: '50px' },
+      { sWidth: '300px' },
+      { sWidth: '250px' },
+      { sWidth: '30px' }
+    ]  
   })
 
   $('.clinics-wrapper').hide()

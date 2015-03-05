@@ -348,7 +348,7 @@ p.post-body {
 
 .tab-link a {
   font-family: 'SackersGothic';
-  color: black;
+  color: grey;
   text-decoration: none;
 }
 
@@ -359,8 +359,12 @@ p.post-body {
 .tab-link a:hover, .tab-link a:active {
   text-decoration: none;
   cursor: pointer;
+  color: black;
 }
 
+.active-tab-link a {
+  color: black;
+}
 
 .active-tab-link::before {
   font-family: 'SackersGothic';
@@ -446,9 +450,7 @@ p.post-body {
 }
 
 #shows_clinics {
-  text-align: center;
-  margin: 0 auto;
-  padding-left: 200px;
+  padding-left: 300px;
   margin-top: 30px;
 }
 
@@ -499,6 +501,12 @@ p.post-body {
 
 #video-title {
   font-size: 2.5vh;
+}
+
+.underline {
+  position: absolute;
+  left: 30px;
+  top: 375px;
 }
 
 #video-body {
@@ -651,6 +659,14 @@ ul.social-links li img {
 
 .c {
   background-color: transparent !important;
+}
+
+.table thead tr th {
+  color: grey;
+}
+
+#spear-wolf {
+  margin-right: 150px;
 }
 
 /* Sink */

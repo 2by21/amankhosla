@@ -39,6 +39,7 @@
         <div class='video-detail-wrapper'>
         <iframe id="video-frame" width="100%" height="315" src="//www.youtube.com/embed/<%= @video.link %>" frameborder="0" allowfullscreen></iframe>
           <h1 id="video-title"><%= @video.title %></h1>
+          <img class="underline" src="assets/underline.png"/>
           <p id="video-body"><%= @video.body %></p>
         </div>
     <% end %>
@@ -170,10 +171,10 @@
         <table class="table shows-table">
             <thead>
                 <tr>
-                    <th>WHAT</th>
-                    <th>WHERE</th>
-                    <th>WHEN</th>
-                    <th>HOW</th>
+                    <th class="table-header">WHAT</th>
+                    <th class="table-header">WHERE</th>
+                    <th class="table-header">WHEN</th>
+                    <th class="table-header">HOW</th>
                 </tr>
             </thead>
             <tbody>
