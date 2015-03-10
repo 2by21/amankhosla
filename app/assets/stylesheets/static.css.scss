@@ -203,12 +203,12 @@ p.post-body {
 }
 
 #section2 .post-container-ul li {
-  width: 23% !important;
+  width: 25% !important;
   float: left;
 }
 
 .indi-post:nth-child(1), .indi-post:nth-child(2) {
-  margin-right: 13% !important;
+  margin-right: 11% !important;
 }
 
 #section2 .post-container ul li:not(.post-selector-li) {
@@ -258,6 +258,10 @@ p.post-body {
 
 #section2 .js-post {
   white-space: nowrap;
+}
+
+h3.js-post {
+  font-size: 4vh;
 }
 
 #section2 #ul-posts-list {
