@@ -20,6 +20,7 @@
 
 body {
   font-family: 'Sansumi-DemoBold';
+  overflow-y:hidden;
 }
 
 /* iPads (portrait and landscape) ----------- */
@@ -358,8 +359,6 @@ h3.js-post {
 }
 
 .video-preview {
-  -webkit-border-image: url("thumbnail_border.png") 25 30 10 20 repeat stretch;
-  border-image: url("thumbnail_border.png") 25 30 10 20 repeat stretch;
   height: auto;
   width: 100%;
 }
@@ -372,13 +371,18 @@ h3.js-post {
 #video-prev-img, #video-nxt-img{
   width: 40px;
   position: relative;
-  left: -12px;
+}
+
+#video-nxt {
+  position: relative;
+  top: 30%;
+  left: 1.5%;
+  z-index: 9999;
 }
 
 #video-prev, #video-nxt{
   width:50px;
   display: relative !important;
-  left: -20px;
   cursor: pointer;
 }
 
@@ -570,7 +574,7 @@ h3.js-post {
 .underline {
   position: absolute;
   left: 30px;
-  top: 390px;
+  top: 365px;
 }
 
 #video-body {
@@ -731,6 +735,8 @@ ul.social-links li img {
 
 #spear-wolf {
   margin-right: 150px;
+  position: relative;
+  left: -4.7%;
 }
 
 .star {
