@@ -130,7 +130,7 @@ $ ->
   $('.shows-table').DataTable({
     autoWidth: false
     paging: false
-    scrollY: "350px"
+    scrollY: "60vh"
     searching: false
     bAutoWidth: false
     aoColumns : [ { sWidth: '50px' }, { sWidth: '300px' }, { sWidth: '250px' }, { sWidth: '30px' } ]  
