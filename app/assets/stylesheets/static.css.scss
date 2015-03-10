@@ -109,8 +109,17 @@ body, html {
   float: none !important;
 }
 
+#tools {
+  padding-top: 10%;
+}
+
 .tools a:hover {
   text-decoration: none;
+}
+
+li.tools {
+  margin-bottom:5%;
+  font-size: 14px;
 }
 
 .black a {
@@ -119,6 +128,14 @@ body, html {
 
 .white a {
   color: grey;
+}
+
+.black a:hover {
+  color: grey;
+}
+
+.white a:hover {
+  color: black;
 }
 
 .section{
@@ -263,6 +280,10 @@ p.post-body {
 
 #section2 ol#pagination, #section6 ol#pagination{
   display:none;
+}
+
+#photos {
+  padding-top: 10%;
 }
 
 /*#section2 #ul-posts-list::before{
@@ -422,6 +443,10 @@ p.post-body {
   color: black;
   text-decoration: none;
   font-family: 'SackersGothic';
+}
+
+#other {
+  padding-top: 10%;
 }
 
 #other.tab-content li a {
