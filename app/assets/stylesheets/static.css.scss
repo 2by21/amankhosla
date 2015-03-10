@@ -22,27 +22,67 @@ body {
   font-family: 'Sansumi-DemoBold';
 }
 
-.landing{
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px) {
+/* Styles */
+}
+ 
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px)
+and (orientation : landscape) {
+/* Styles */
+}
+ 
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px)
+and (orientation : portrait) {
+/* Styles */
+}
+ 
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+  display: none;
+/* Styles */
+}
+ 
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+  body {
+    display: none;
+  }
+/* Styles */
+}
+
+.landing {
   background: url(landing_page.png) top left no-repeat;
   background-size: cover;
   height: 100vh;
   font-family: 'SackersGothic';
 }
-.landing-links-div{
+
+.landing-links-div {
   bottom: 0;
   right: 0;
   position: fixed;
 }
 
 .landing-links-list {
-  li{
+  li {
     display: inline;
     padding: 0 15px 0 15px;
   }
-  a{
+  a {
     color:grey;
   }
-  a:hover{
+  a:hover {
     color:black;
     text-decoration: none;
   }
@@ -337,8 +377,7 @@ p.post-body {
 
 .tab-content {
   display: none;
-  height: 70vh;
-  height: 400px;
+  height: 65vh;
   padding-right: 35px;
 }
 
