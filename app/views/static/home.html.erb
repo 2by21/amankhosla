@@ -44,10 +44,14 @@
 
     <% if @video %>
         <div class='video-detail-wrapper'>
-        <iframe id="video-frame" width="100%" height="315" src="//www.youtube.com/embed/<%= @video.link %>" frameborder="0" allowfullscreen></iframe>
-          <h1 id="video-title"><%= @video.title %></h1>
-          <img class="underline" src="assets/underline.png"/>
-          <p id="video-body"><%= @video.body %></p>
+            <div class="auto-resizable-iframe">
+                <div>
+                    <iframe frameborder="0" allowfullscreen="" src="//www.youtube.com/embed/<%= @video.link %>"></iframe>
+                </div>
+            </div>
+            <h1 id="video-title"><%= @video.title %></h1>
+            <img class="underline" src="assets/underline.png"/>
+            <p id="video-body"><%= @video.body %></p>
         </div>
     <% end %>
     
