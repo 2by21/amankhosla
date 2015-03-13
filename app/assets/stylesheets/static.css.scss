@@ -20,46 +20,6 @@
 
 body {
   font-family: 'Sansumi-DemoBold';
-  overflow-y:hidden;
-}
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen
-and (min-width : 768px)
-and (max-width : 1024px) {
-/* Styles */
-}
- 
-/* iPads (landscape) ----------- */
-@media only screen
-and (min-width : 768px)
-and (max-width : 1024px)
-and (orientation : landscape) {
-/* Styles */
-}
- 
-/* iPads (portrait) ----------- */
-@media only screen
-and (min-width : 768px)
-and (max-width : 1024px)
-and (orientation : portrait) {
-/* Styles */
-}
- 
-/* Desktops and laptops ----------- */
-@media only screen
-and (min-width : 1224px) {
-  display: none;
-/* Styles */
-}
- 
-/* Large screens ----------- */
-@media only screen
-and (min-width : 1824px) {
-  body {
-    display: none;
-  }
-/* Styles */
 }
 
 .landing {
@@ -145,6 +105,7 @@ li.tools {
   bottom: 0px;
   float: left;
   height: 100%;
+  overflow-y: hidden;
 }
 
 .image-scale {
