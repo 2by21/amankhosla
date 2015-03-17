@@ -196,7 +196,7 @@ p.post-body {
   float: left;
   font-family: 'SackersGothic';
   font-size: 20px;
-  font-size: 1vw;
+  font-size: .9vw;
 }
 
 #section2 .post-date {
@@ -237,7 +237,7 @@ h3.js-post {
   display: inline-block;
   min-width: 80%;
   height: 50px; 
-  margin-bottom: -7px;
+  margin-bottom: -.1%;
 }
 
 #section2 ol#pagination, #section6 ol#pagination{
@@ -309,7 +309,8 @@ h3.js-post {
 
 #section6 {
   width: 100vh;
-  background-color: black;
+  background: url(video-bg.png) top left no-repeat;
+  background-size: cover;
   color: white;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -671,7 +672,8 @@ ul.social-links li img {
 
 .modal-dialog {
   margin-top: 80px !important;
-  margin-left: 170px !important;
+  margin-left: 30% !important;
+  margin-right: 30% !important;
 }
 
 .dataTables_info {
