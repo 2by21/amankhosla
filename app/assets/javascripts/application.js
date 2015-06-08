@@ -17,6 +17,7 @@
 //= require dataTables/jquery.dataTables
 //= require bootstrap-sprockets
 //= require easypaginate
+//= require mousewheel
 //= require jssor
 //= require jssor.slider
 //= require static

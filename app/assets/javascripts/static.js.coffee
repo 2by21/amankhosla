@@ -6,6 +6,11 @@ $( window ).load ->
     $('body').width(width + 20)
 
 $ ->
+
+  $('html, body, *').mousewheel (e, delta) ->
+    this.scrollLeft -= (delta * 10);
+    e.preventDefault();
+
   #post coffeescript
   switch_posts = (data, index) ->
     if index == 0
@@ -136,11 +141,35 @@ $ ->
     aoColumns : [ { sWidth: '50px' }, { sWidth: '300px' }, { sWidth: '250px' }, { sWidth: '30px' } ]  
   })
 
+  $('.clinics-table').DataTable({
+    autoWidth: false
+    paging: false
+    scrollY: "60vh"
+    searching: false
+    bAutoWidth: false
+    aoColumns : [ { sWidth: '50px' }, { sWidth: '300px' }, { sWidth: '250px' }, { sWidth: '30px' } ]  
+  })
+
   $('.clinics-wrapper').hide()
 
   $('#shows-link, #clinics-link').click ->
     $('.clinics-wrapper').toggle()
     $('.shows-wrapper').toggle()
+    $(this).toggleClass('hovered')
+    $(this).siblings().toggleClass('hovered')
+
+
+
+
+  # $('#shows-link').hover( 
+  #   ->  $(this).addClass('hovered-shows')
+  #   ->  $(this).removeClass('hovered-shows') unless $('.shows-wrapper').is(':visible')
+  # )
+
+  # $('#clinics-link').hover( 
+  #   ->  $(this).addClass('hovered-clinics')
+  #   ->  $(this).removeClass('hovered-clinics') unless $('.clinics-wrapper').is(':visible')
+  # )
 
   $('#first-twinkle').hide()
   $('#second-twinkle').hide()

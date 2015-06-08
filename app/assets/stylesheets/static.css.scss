@@ -71,7 +71,7 @@ body, html {
 }
 
 #tools {
-  padding-top: 10%;
+  padding-top: 20%;
 }
 
 .tools a:hover {
@@ -79,7 +79,7 @@ body, html {
 }
 
 li.tools {
-  margin-bottom:5%;
+  margin-bottom:10%;
   font-size: 14px;
 }
 
@@ -326,7 +326,7 @@ h3.js-post {
 }
 
 .video-detail-wrapper{
-  margin:0 50px 0 50px;
+  margin: 30px 50px 0 50px;
   padding-top: 35px;
 }
 
@@ -369,7 +369,7 @@ h3.js-post {
 }
 
 .tab-link {
-  text-align: left !important;
+  //text-align: left !important;
 }
 
 .tab-link a {
@@ -394,14 +394,14 @@ h3.js-post {
 
 .active-tab-link::before {
   font-family: 'SackersGothic';
-  content: "(";
-  font-size: 12px;
+  content: "( ";
+  font-size: 14px;
 }
 
 .active-tab-link:after {
   font-family: 'SackersGothic';
-  content: ")";
-  font-size: 12px;
+  content: " )";
+  font-size: 14px;
 }
 
 .tab-link #other-projects {
@@ -429,6 +429,8 @@ h3.js-post {
 .tab-link-ul .tab-link {
   text-align: center;
   padding-top: 40px;
+    padding-left: 0;
+
 }
 
 .active-tab {
@@ -462,6 +464,7 @@ h3.js-post {
 #section10 {
   padding-left: 100px;
   padding-right: 100px;
+  width: 1405px;
 }
 
 #section10 .table thead tr th {
@@ -491,9 +494,10 @@ h3.js-post {
   height: 60px;
   width: 100px;
   float: left;
+  cursor: pointer;
 }
 
-#shows-link:hover {
+#shows-link.hovered {
   background-image: image-url('shows_hover.png');
   position: relative;
   top: 17px;
@@ -520,9 +524,10 @@ h3.js-post {
   float: left;
   position: relative;
   top: 3px;
+  cursor: pointer;
 }
 
-#clinics-link:hover {
+#clinics-link.hovered {
   background-image: image-url('clincs_hover.png');
   position: relative;
   top: 17px;
@@ -671,9 +676,9 @@ ul.social-links li img {
 }
 
 .modal-dialog {
-  margin-top: 80px !important;
-  margin-left: 30% !important;
-  margin-right: 30% !important;
+  margin-top: 140px !important;
+  margin-left: 0 important;
+  margin-right: 35% !important;
 }
 
 .dataTables_info {
@@ -686,6 +691,7 @@ ul.social-links li img {
 
 .slider div div {
   background-color: black;
+  cursor: pointer;
 }
 
 .c {
@@ -776,4 +782,16 @@ ul.social-links li img {
   left: 0px;
   width: 100%;
   height: 100%;
+}
+
+.dataTables_scrollHeadInner{
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+.table.shows-table.dataTable.no-footer{
+  width: 100% !important;
+}
+.table.clinics-table.dataTable.no-footer{
+  width: 100% !important;
 }

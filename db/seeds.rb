@@ -4,6 +4,12 @@ Link.create(url: 'http://www.example.com')
 Link.create(url: 'http://www.example.com')
 Link.create(url: 'http://www.example.com')
 
+
+Egg.create(link: 'http://www.example.com')
+Egg.create(link: 'http://www.example.com')
+Egg.create(link: 'http://www.example.com')
+Egg.create(link: 'http://www.example.com')
+
 Bio.create(text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum hendrerit nisl ac sapien vestibulum pretium. Nam rhoncus augue a venenatis cursus. Morbi maximus maximus odio sit amet laoreet. Ut sollicitudin, neque vel rutrum facilisis, justo mauris consectetur metus, sed pellentesque sapien nisi in est. Vivamus tristique tortor vulputate, sollicitudin arcu rhoncus, varius metus. Phasellus consequat ac dolor at mollis. Sed ex tellus, lacinia at augue sit amet, ultricies accumsan quam. Maecenas at ipsum augue.
 
 Etiam ut commodo felis. In vitae enim sed tortor tincidunt commodo et ac libero. Etiam est ex, mollis nec massa quis, mattis fringilla nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus vitae nisi felis. Pellentesque urna lectus, tempus sed lacus eu, facilisis consequat tortor. Donec cursus libero tempus tincidunt bibendum. Phasellus interdum pharetra felis sed vestibulum.

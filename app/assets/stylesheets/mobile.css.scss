@@ -264,14 +264,14 @@ ul li {
 
 .active-tab-link::before {
   font-family: 'SackersGothic';
-  content: "(";
-  font-size: 12px;
+  content: " ( ";
+  font-size: 16px;
 }
 
 .active-tab-link:after {
   font-family: 'SackersGothic';
-  content: ")";
-  font-size: 12px;
+  content: " ) ";
+  font-size: 16px;
 }
 
 .tab-link #other-projects {
