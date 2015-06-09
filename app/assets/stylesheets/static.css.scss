@@ -345,7 +345,7 @@ h3.js-post {
 
 #video-nxt {
   position: relative;
-  top: 33%;
+  top: 34%;
   left: 1.5%;
   z-index: 9999;
 }
@@ -373,7 +373,12 @@ h3.js-post {
 .tab-content {
   display: none;
   height: 65vh;
-  padding-right: 35px;
+  padding-right: 20px;
+}
+
+.tab-content.wider{
+  padding-right: 0;
+  width: 104%;
 }
 
 .tab-link {
@@ -420,7 +425,7 @@ h3.js-post {
 }
 
 #other {
-  padding-top: 10%;
+  padding-top: 20%;
 }
 
 #other.tab-content li a {
@@ -587,7 +592,7 @@ h3.js-post {
 
 ul.social-links {
   position: relative;
-  left: -6px;
+  left: 20px;
 }
 
 ul.social-links li {
@@ -597,6 +602,11 @@ ul.social-links li {
 ul.social-links li img {
   width: 30px;
   height: auto;
+}
+
+.tab-link.other{
+  width: 45%;
+  text-align: center;
 }
 
 .social-icon {
