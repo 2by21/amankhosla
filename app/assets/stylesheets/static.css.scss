@@ -30,12 +30,26 @@ body {
   font-family: 'SackersGothic';
 }
 
-landing-social-links{
-  top: 0;
+.landing-social-div{
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  .landing-social-links {
+    margin-bottom: 5px;
+    height: 100%;
+    li {
+      display: inline;
+      padding: 11px 19px 0px 15px;
+    }
+  }
+}
+
+/*landing-social-links{
+  bottom: 0;
   right: 0;
   position: absolute;
   float: right;
-}
+}*/
 
 .landing-links-div {
   bottom: 0;
