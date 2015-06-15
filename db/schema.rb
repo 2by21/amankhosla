@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150305084849) do
+ActiveRecord::Schema.define(version: 20150615044400) do
 
   create_table "bios", force: true do |t|
     t.text     "text"
@@ -75,6 +75,13 @@ ActiveRecord::Schema.define(version: 20150305084849) do
     t.string   "where"
     t.datetime "when"
     t.string   "how"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "social_media_links", force: true do |t|
+    t.string   "name"
+    t.string   "url"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

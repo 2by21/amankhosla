@@ -12,11 +12,11 @@
   </div>
   <div class='landing-social-div'>
     <ul class="landing-social-links">
-      <a href="#"><li id="facebook-icon" class="social-icon"></li></a>
-      <a href="#"><li id="twitter-icon" class="social-icon"></li></a>
-      <a href="#"><li id="youtube-icon" class="social-icon"></li></a>
-      <a href="#"><li id="bandcamp-icon" class="social-icon"></li></a>
-      <a href="#"><li id="email-icon" class="social-icon"></li></a>
+      <a href="http://<%= SocialMediaLink.find_by_name('Facebook').url %>"><li id="facebook-icon" class="social-icon"></li></a>
+      <a href="http://<%= SocialMediaLink.find_by_name('Twitter').url %>"><li id="twitter-icon" class="social-icon"></li></a>
+      <a href="http://<%= SocialMediaLink.find_by_name('YouTube').url %>"><li id="youtube-icon" class="social-icon"></li></a>
+      <a href="http://<%= SocialMediaLink.find_by_name('Bandcamp').url %>"><li id="bandcamp-icon" class="social-icon"></li></a>
+      <a href="mailto:amankhosla1@gmail.com"><li id="email-icon" class="social-icon"></li></a>
     </ul>
   </div>
 </div>
