@@ -18,6 +18,7 @@
 //= require bootstrap-sprockets
 //= require easypaginate
 //= require mousewheel
+//= require glow
 //= require jssor
 //= require jssor.slider
 //= require static

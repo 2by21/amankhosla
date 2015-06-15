@@ -6,6 +6,7 @@ $( window ).load ->
     $('body').width(width + 20)
 
 $ ->
+  #$('.landing-logo').glow({ radius: 300, color: "#ffffff" })
 
   $('html, body, *').mousewheel (e, delta) ->
     this.scrollLeft -= (delta * 10);
