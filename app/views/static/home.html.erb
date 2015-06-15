@@ -82,7 +82,7 @@
     <div id="other" class="tab-content">
         <ul>
             <% @projects.each_with_index do |project, index| %>
-                <li class="tools <%= index.even? ? 'black' : 'white' %>"><%= link_to project.name, project.url %></li>
+                <li class="tools <%= index.even? ? 'black' : 'white' %>"><%= link_to project.name, "http://#{project.url}" %></li>
             <% end %>
         </ul>
     </div>
@@ -152,7 +152,7 @@
     <div id="tools" class="tab-content" style="display: none;">
         <ul>
             <% @tools.each_with_index do |tool, index| %>
-                <li class="tools <%= index.even? ? 'black' : 'white' %>"><%= link_to tool.text, tool.link %></li>
+                <li class="tools <%= index.even? ? 'black' : 'white' %>"><%= link_to tool.text, "http://#{tool.link}" %></li>
             <% end %>
         </ul>
     </div>
