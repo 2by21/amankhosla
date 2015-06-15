@@ -113,8 +113,10 @@ body, html {
   float: none !important;
 }
 
-#tools {
-  padding-top: 20%;
+#tools ul {
+  position: relative;
+  top: 45%;
+  transform: translateY(-47%);
 }
 
 .tools a:hover {
@@ -458,8 +460,10 @@ h3.js-post {
   font-family: 'SackersGothic';
 }
 
-#other {
-  padding-top: 20%;
+#other ul {
+  position: relative;
+  top: 45%;
+  transform: translateY(-47%);
 }
 
 #other.tab-content li a {
