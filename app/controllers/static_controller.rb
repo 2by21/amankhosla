@@ -4,8 +4,8 @@ class StaticController < ApplicationController
 
   def home
     @posts = Post.all
-    @video = Video.first
-    @videos = Video.all
+    @video = Video.order(created_at: :desc).first
+    @videos = Video.all.order(created_at: :desc)
     @shows = Show.all
     @bio = Bio.first
     @tools = Tool.all

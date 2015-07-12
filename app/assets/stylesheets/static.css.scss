@@ -31,10 +31,10 @@ body {
 }
 
 .landing-logo { 
-  max-width:200px;
+  max-width:130px;
 }
-/*
-.landing-logo:hover { 
+
+/*.landing-logo:hover { 
   cursor:pointer;
   -webkit-filter: drop-shadow(1px 1px 0 white)
                   drop-shadow(-1px -1px 0 white);
@@ -44,12 +44,9 @@ body {
 */
 
 .landing-logo-wrapper { 
-  padding-top: 20%;
-  padding-left: 12%;
+  padding-top: 25%;
+  padding-left: 15%;
 }
-
-
-    
 
 .landing-social-div{
   bottom: 0;
@@ -282,6 +279,7 @@ h3.js-post {
   min-width: 80%;
   height: 50px; 
   margin-bottom: -.1%;
+  padding-left: 2%;
 }
 
 #section2 ol#pagination, #section6 ol#pagination{
@@ -615,6 +613,10 @@ h3.js-post {
   width: 100%;
 }
 
+.w img{
+  width: auto !important;
+}
+
 .gallery-li {
   margin-right: 0 !important;
   float: left;
@@ -760,7 +762,7 @@ ul.social-links li img {
 #spear-wolf {
   margin-right: 130px;
   position: relative;
-  left: -4.7%;
+  left: -0.7%;
 }
 
 .underline{
@@ -851,6 +853,12 @@ ul.social-links li img {
 .table.shows-table.dataTable.no-footer{
   width: 100% !important;
 }
+
 .table.clinics-table.dataTable.no-footer{
   width: 100% !important;
 }
+
+#vids-selector-wrapper{
+ text-align: center; 
+}
+

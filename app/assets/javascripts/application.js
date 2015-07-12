@@ -26,3 +26,16 @@
 //= require base
 //= require_tree ./utilities
 //= require_tree ./elements
+
+$(function() {
+    $('.landing-logo')
+    .mouseenter(function() {
+      alert('yo');
+      $('#logo-one').fadeOut('slow');
+      $('#logo-two').fadeIn('slow');
+    })
+    .mouseleave(function() {
+      $('#logo-one').fadeOut('slow');
+      $('#logo-two').fadeIn('slow');
+    });  
+});

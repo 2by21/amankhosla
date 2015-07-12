@@ -2,7 +2,7 @@ class VideosController < ApplicationController
   layout 'admin_layout'
   before_action :authenticate
   def index
-    @videos = Video.all
+    @videos = Video.all.order(created_at: :desc)
   end
 
   def new
