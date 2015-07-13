@@ -23,6 +23,7 @@ gem 'better_errors'
 gem "binding_of_caller"
 gem 'jquery-datatables-rails', '~> 3.1.1'
 gem 'mobile-fu'
+gem 'dotenv-rails', :groups => [:development, :test]
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

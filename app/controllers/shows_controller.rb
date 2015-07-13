@@ -2,7 +2,7 @@ class ShowsController < ApplicationController
   layout 'admin_layout'  
   before_action :authenticate
   def index
-    @shows = Show.all
+    @shows = Show.all.order(created_at: :desc)
   end
 
   def new

@@ -6,12 +6,12 @@ class StaticController < ApplicationController
     @posts = Post.all
     @video = Video.order(created_at: :desc).first
     @videos = Video.all.order(created_at: :desc)
-    @shows = Show.all
+    @shows = Show.all.order(created_at: :desc)
     @bio = Bio.first
     @tools = Tool.all
     @galleries = Gallery.all
     @projects = Project.all
-    @clinics = Clinic.all
+    @clinics = Clinic.all.order(created_at: :desc)
     links = Link.all.order('created_at DESC')
     @link1 = links[0]
     @link2 = links[1]

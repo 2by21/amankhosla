@@ -7,7 +7,7 @@ class ClinicsController < ApplicationController
   end
 
   def index
-    @clinics = Clinic.all
+    @clinics = Clinic.all.order(created_at: :desc)
   end
 
   def create
