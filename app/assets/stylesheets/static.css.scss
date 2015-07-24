@@ -121,6 +121,8 @@ body, html {
   position: relative;
   top: 45%;
   transform: translateY(-47%);
+  -ms-transform: translateY(-47%);
+  -webkit-transform: translateY(-47%);
 }
 
 .tools a:hover {
@@ -463,6 +465,8 @@ h3.js-post {
   position: relative;
   top: 45%;
   transform: translateY(-47%);
+  -ms-transform: translateY(-47%);
+  -webkit-transform: translateY(-47%);
 }
 
 #other.tab-content li a {
