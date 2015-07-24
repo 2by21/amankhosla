@@ -852,25 +852,62 @@ ul.social-links li img {
   height: 100%;
 }
 
-.dataTables_scrollHeadInner{
-  width: 100% !important;
-  margin: 0 !important;
+.shows-table{
+  display: block;
 }
 
-.table.shows-table.dataTable.no-footer{
-  width: 100% !important;
-  thead {
-    cursor: pointer;
-  }
+.shows-table-body{
+  display: block;
+  max-height: 500px;
+  overflow-y: scroll;
 }
 
-.table.clinics-table.dataTable.no-footer{
-  width: 100% !important;
-  thead {
-    cursor: pointer;
-  }
+.clinics-table{
+  display: block;
 }
 
+.clinics-table-body{
+  display: block;
+  max-height: 500px;
+  overflow-y: scroll;
+}
+
+.tbl-row{
+  display: block;
+}
+
+.tbl-row td:nth-child(1), .tbl-row th:nth-child(1){
+  width: 200px;
+}
+
+.tbl-row td:nth-child(2), .tbl-row th:nth-child(2){
+  width: 600px;
+}
+
+.tbl-row td:nth-child(3), .tbl-row th:nth-child(3){
+  width: 200px;
+}
+
+.tbl-row td:nth-child(4), .tbl-row th:nth-child(4){
+  width: 200px;
+}
+
+#tbl-scroll-up{
+  width:3%;
+  cursor: pointer;
+}
+
+#tbl-scroll-down{
+  width:3%;
+  cursor: pointer;
+  -ms-transform: rotate(180deg); /* IE 9 */
+  -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+  transform: rotate(180deg);
+}
+
+#scrolls{
+  text-align:center;
+}
 #vids-selector-wrapper{
  text-align: center; 
 }

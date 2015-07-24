@@ -133,23 +133,23 @@ $ ->
   jssor_slider3 = new $JssorSlider$('slider3_container', options)
 
   #shows/clinics tables coffeescript
-  $('.shows-table').DataTable({
-    autoWidth: false
-    paging: false
-    scrollY: "60vh"
-    searching: false
-    bAutoWidth: false
-    aoColumns : [ { sWidth: '50px' }, { sWidth: '300px' }, { sWidth: '250px' }, { sWidth: '30px' } ]  
-  })
+  # $('.shows-table').DataTable({
+  #   autoWidth: false
+  #   paging: false
+  #   scrollY: "60vh"
+  #   searching: false
+  #   bAutoWidth: false
+  #   aoColumns : [ { sWidth: '50px' }, { sWidth: '300px' }, { sWidth: '250px' }, { sWidth: '30px' } ]  
+  # })
 
-  $('.clinics-table').DataTable({
-    autoWidth: false
-    paging: false
-    scrollY: "60vh"
-    searching: false
-    bAutoWidth: false
-    aoColumns : [ { sWidth: '50px' }, { sWidth: '300px' }, { sWidth: '250px' }, { sWidth: '30px' } ]  
-  })
+  # $('.clinics-table').DataTable({
+  #   autoWidth: false
+  #   paging: false
+  #   scrollY: "60vh"
+  #   searching: false
+  #   bAutoWidth: false
+  #   aoColumns : [ { sWidth: '50px' }, { sWidth: '300px' }, { sWidth: '250px' }, { sWidth: '30px' } ]  
+  # })
 
   $('.clinics-wrapper').hide()
 
