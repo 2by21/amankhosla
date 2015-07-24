@@ -34,18 +34,25 @@ body {
   max-width:130px;
 }
 
-/*.landing-logo:hover { 
-  cursor:pointer;
-  -webkit-filter: drop-shadow(1px 1px 0 white)
-                  drop-shadow(-1px -1px 0 white);
-  filter: drop-shadow(1px 1px 0 white) 
-          drop-shadow(-1px -1px 0 white);
+div.fadehover { 
+  cursor: pointer;
+  position: relative;
+  top: 48vh;
+  left: 15%;
 }
-*/
 
-.landing-logo-wrapper { 
-  padding-top: 25%;
-  padding-left: 15%;
+img.a{
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+img.b{
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  z-index: 10;
 }
 
 .landing-social-div{

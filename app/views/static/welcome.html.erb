@@ -1,13 +1,15 @@
 <div class='landing'>
-  <div class="landing-logo-wrapper">
-    <img class="landing-logo" id='logo-one' src="assets/Logo_White-09.png"/>
-    <img class="landing-logo" id='logo-two' src="assets/Logo_Hover.png"/>
-  </div>
+  <a href="<%= home_path %>">
+    <div class="fadehover">
+      <img class="landing-logo a" src="assets/Logo_White-09.png"/>
+      <img class="landing-logo b" src="assets/Logo_Hover.png"/>
+    </div>
+  </a>
   <div class='landing-links-div'>
     <ul class='landing-links-list'>
       <li><a href="<%= home_path %>">AMAN</a></li> /
-      <li><a href="#">COMPOSITIONS</a></li> / 
-      <li><a href="#">LEARN</a></li> / 
+      <li><a href="http://www.soundcloud.com/aman-khosla">COMPOSITIONS</a></li> / 
+      <li><a href="https://tack.bz/2bLCg">LEARN</a></li> / 
       <li><a href="/home#shows">SHOWS</a></li>
     </ul>
   </div>
@@ -21,3 +23,20 @@
     </ul>
   </div>
 </div>
+
+<script>
+$(document).ready( function() {
+
+    $(".fadehover").hover(
+      function() {
+        $("img.b").fadeIn("slow");
+        console.log('fading in');
+      },
+      function() {
+        $("img.b").fadeOut("slow");
+        console.log('fading out');
+      }
+    );
+
+});
+</script>
