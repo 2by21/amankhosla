@@ -18,7 +18,7 @@
 
     var defaults = {        
       step: 4,
-      delay: 100,
+      delay: 1,
       numeric: true,
       nextprev: true,
       auto:false,
@@ -48,10 +48,10 @@
       $(children).each(function(i){
         var child = $(this);
         child.hide();
-        if(i>=lower && i<upper){ setTimeout(function(){ child.fadeIn('fast') }, ( i-( Math.floor(i/step) * step) )*options.delay ); }
+        if(i>=lower && i<upper){ setTimeout(function(){ child.fadeIn(1500); }, ( i-( Math.floor(i/step) * step) )*options.delay ); }
         if(options.nextprev){
-          if(upper >= count) { next.fadeOut('fast'); } else { next.fadeIn('fast'); };
-          if(lower >= 1) { prev.fadeIn('fast'); } else { prev.fadeOut('fast'); };
+          if(upper >= count) { next.fadeOut(1500); } else { next.fadeIn(1500); };
+          if(lower >= 1) { prev.fadeIn(1500); } else { prev.fadeOut(1500); };
         };
       }); 
       $('li','#'+ options.controls).removeClass(options.current);
