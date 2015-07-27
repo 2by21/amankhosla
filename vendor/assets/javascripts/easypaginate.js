@@ -48,10 +48,10 @@
       $(children).each(function(i){
         var child = $(this);
         child.hide();
-        if(i>=lower && i<upper){ setTimeout(function(){ child.fadeIn(1500); }, ( i-( Math.floor(i/step) * step) )*options.delay ); }
+        if(i>=lower && i<upper){ setTimeout(function(){ child.show(); }, ( i-( Math.floor(i/step) * step) )*options.delay ); }
         if(options.nextprev){
-          if(upper >= count) { next.fadeOut(1500); } else { next.fadeIn(1500); };
-          if(lower >= 1) { prev.fadeIn(1500); } else { prev.fadeOut(1500); };
+          if(upper >= count) { next.hide(); } else { next.show(); };
+          if(lower >= 1) { prev.show(); } else { prev.hide(); };
         };
       }); 
       $('li','#'+ options.controls).removeClass(options.current);

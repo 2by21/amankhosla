@@ -27,16 +27,22 @@
 <script>
 $(document).ready( function() {
 
+      var audio = $("audio")[0];
+
+
     $(".fadehover").hover(
       function() {
         $("img.b").fadeIn("slow");
         console.log('fading in');
+        audio.play();
       },
       function() {
         $("img.b").fadeOut("slow");
         console.log('fading out');
       }
     );
+
+    
 
 });
 </script>
