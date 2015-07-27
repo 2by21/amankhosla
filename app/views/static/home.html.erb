@@ -89,7 +89,7 @@
     </div>
 
     <div id="bio" class="tab-content wider active-tab">
-        <%= @bio.text %>
+        <%= @bio.text.html_safe %>
     </div>
 
     <div id="photos" class="tab-content wider" style="display: none;">

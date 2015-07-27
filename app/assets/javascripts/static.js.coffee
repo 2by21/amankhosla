@@ -27,33 +27,33 @@ $ ->
       center = data[index]
       right = data[index+1]
 
-    $('#1st .post-title').text(left['title'])
-    $('#1st .post-body').text(left['body'])
-    $('#1st .post-date').text(left['formatted_date'])
+    $('#1st .post-title').html(left['title'])
+    $('#1st .post-body').html(left['body'])
+    $('#1st .post-date').html(left['formatted_date'])
 
-    $('#2nd .post-title').text(center['title'])
-    $('#2nd .post-body').text(center['body'])
-    $('#2nd .post-date').text(center['formatted_date'])
+    $('#2nd .post-title').html(center['title'])
+    $('#2nd .post-body').html(center['body'])
+    $('#2nd .post-date').html(center['formatted_date'])
 
-    $('#3rd .post-title').text(right['title'])
-    $('#3rd .post-body').text(right['body'])
-    $('#3rd .post-date').text(right['formatted_date'])
+    $('#3rd .post-title').html(right['title'])
+    $('#3rd .post-body').html(right['body'])
+    $('#3rd .post-date').html(right['formatted_date'])
 
   $.ajax({
     url: '/posts'
     type: 'GET'
     success: (data) ->
-      $('#1st .post-title').text(data[0]['title'])
-      $('#1st .post-body').text(data[0]['body'])
-      $('#1st .post-date').text(data[0]['formatted_date'])
+      $('#1st .post-title').html(data[0]['title'])
+      $('#1st .post-body').html(data[0]['body'])
+      $('#1st .post-date').html(data[0]['formatted_date'])
 
-      $('#2nd .post-title').text(data[1]['title'])
-      $('#2nd .post-body').text(data[1]['body'])
-      $('#2nd .post-date').text(data[1]['formatted_date'])
+      $('#2nd .post-title').html(data[1]['title'])
+      $('#2nd .post-body').html(data[1]['body'])
+      $('#2nd .post-date').html(data[1]['formatted_date'])
 
-      $('#3rd .post-title').text(data[2]['title'])
-      $('#3rd .post-body').text(data[2]['body'])
-      $('#3rd .post-date').text(data[2]['formatted_date'])
+      $('#3rd .post-title').html(data[2]['title'])
+      $('#3rd .post-body').html(data[2]['body'])
+      $('#3rd .post-date').html(data[2]['formatted_date'])
 
       for post, index in data
         post_data = "<li data-index=" + index + " class='post-selector-li'><h3 class='js-post'><span class='list-post-title'>" + post['title'] + "</span> <span class='list-post-date'>" + post['formatted_date'] + "</span></h3></li>"
@@ -98,8 +98,8 @@ $ ->
     body = $(this).data('body')
 
     $('#video-frame').attr('src', youtube+video_id)
-    $('#video-title').text(title)
-    $('#video-body').text(body)
+    $('#video-title').html(title)
+    $('#video-body').html(body)
 
   # Tabs coffescript
 

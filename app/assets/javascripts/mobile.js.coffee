@@ -12,9 +12,9 @@ $ ->
     type: 'GET'
     success: (data) ->
       data = data.reverse()
-      $('#1st .post-title').text(data[0]['title'])
-      $('#1st .post-body').text(data[0]['body'])
-      $('#1st .post-date').text(data[0]['formatted_date'])
+      $('#1st .post-title').html(data[0]['title'])
+      $('#1st .post-body').html(data[0]['body'])
+      $('#1st .post-date').html(data[0]['formatted_date'])
 
       for post, index in data
         post_data = "<li data-index='" + index + "' data-body='" + post['body'] + "' data-date='" + post['formatted_date'] + "' data-title='" + post['title'] + "' class='post-selector-li'><h3 class='js-post'><span class='list-post-title'>" + post['title'] + "</span></h3></li>"
@@ -24,9 +24,9 @@ $ ->
         body = $(this).data('body')
         title = $(this).data('title')
         formatted_date = $(this).data('formatted_date')
-        $('#1st .post-title').text(title)
-        $('#1st .post-body').text(body)
-        $('#1st .post-date').text(formatted_date)
+        $('#1st .post-title').html(title)
+        $('#1st .post-body').html(body)
+        $('#1st .post-date').html(formatted_date)
 
       $('#ul-posts-list').easyPaginate({
         step: 3
@@ -49,8 +49,8 @@ $ ->
     body = $(this).data('body')
 
     $('#video-frame').attr('src', youtube+video_id)
-    $('#video-title').text(title)
-    $('#video-body').text(body)
+    $('#video-title').html(title)
+    $('#video-body').html(body)
 
   $('.video-preview-ul').easyPaginate({
     step: 3
