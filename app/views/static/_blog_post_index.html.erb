@@ -4,7 +4,8 @@
         <img id="now" src="assets/now.png"/>
         <ul class="post-container-ul">
             <% ['1st', '2nd', '3rd'].each do |post| %>
-                <li id="<%= post %>" class="indi-post">
+
+                <li id="<%= post %>" class="indi-post <%= "grey-post" if post == '1st' || post == '3rd' %>">
                     <div class="post-title-and-date">
                         <h3 class="post-title"></h3>
                         <h3 class="post-date"></h3>
