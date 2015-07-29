@@ -1,0 +1,8 @@
+<h1>New Audio File for Landing Page</h1>
+
+<%= form_for @audio do |f| %>
+  <%= f.label :sound_file %>
+  <%= f.file_field :sound_file %>
+
+  <%= f.submit %>
+<% end %>

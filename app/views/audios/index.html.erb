@@ -1,0 +1,13 @@
+<h1>Sound File</h1>
+
+<br><br>
+<% if Audio.all.count == 1 %>
+  <p>
+    <%= @audio.sound_file.original_filename %>
+    <%= link_to 'Destroy', @audio, method: :delete %>
+  </p>
+<% else %>
+
+<%= link_to 'New Sound File', new_audio_path %>
+
+<% end %>

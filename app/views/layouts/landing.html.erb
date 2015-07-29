@@ -7,9 +7,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<% if Audio.all.count > 0 %>
 <audio>
-    <source src="assets/sound.mp3"></source>
+    <source src=<%= Audio.first.sound_file.url %>></source>
 </audio>
+<% end %>
+
 <%= yield %>
 
 <%= include_rails_script %>

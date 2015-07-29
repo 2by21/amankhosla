@@ -33,12 +33,12 @@ $(document).ready( function() {
     $(".fadehover").hover(
       function() {
         $("img.b").fadeIn("slow");
-        console.log('fading in');
         audio.play();
       },
       function() {
         $("img.b").fadeOut("slow");
-        console.log('fading out');
+        audio.pause();
+        audio.currentTime = 0;
       }
     );
 
