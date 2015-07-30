@@ -1,5 +1,4 @@
 class StaticController < ApplicationController
-  before_filter :force_tablet_html
   has_mobile_fu
 
   def home
@@ -22,7 +21,7 @@ class StaticController < ApplicationController
   def showsclinics
     @shows = Show.all.order(created_at: :desc)
     @clinics = Clinic.all.order(created_at: :desc)
-    render 'shows-clinics.html.erb', :layout => false
+    render 'showsclinics.mobile.erb', :layout => false
   end
 
   def welcome
@@ -31,10 +30,5 @@ class StaticController < ApplicationController
     end
     render layout: 'landing' and return
   end
-
-  private
-    def force_tablet_html
-      session[:tablet_view] = false
-    end
   
 end
