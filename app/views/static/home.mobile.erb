@@ -68,9 +68,11 @@
         <div class="section4">
           <%= image_tag 'video_title.png', id: 'video-title' %>
 
-          <% if @video %>
+          <% if @videos %>
             <div class='video-detail-wrapper'>
-              <iframe id="video-frame" width="75%" height="550px" src="//www.youtube.com/embed/<%= @video.link %>" frameborder="0" allowfullscreen></iframe>
+              <% @videos.each_with_index do |v, index| %>
+                <iframe data-index="<%= index %>" id="video-<%= index %>" class="video-frame <%= index == 0 ? 'showing' : 'not-showing' %>" width="75%" height="550px" src="//www.youtube.com/embed/<%= v.link %>" frameborder="0" allowfullscreen></iframe>
+              <% end %>
             </div>
           <% end %>
           
@@ -114,5 +116,7 @@
 
 </body>
 </html>
+s
+
 
 

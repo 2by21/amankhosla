@@ -215,7 +215,15 @@ ul li {
   text-align: center;
 }
 
-#video-frame {
+.showing{
+  display: block !important;
+}
+
+.not-showing{
+  display: none !important;
+}
+
+.video-frame {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -446,11 +454,12 @@ ul.social-links li img {
   background-size: cover;
   height: 1600px;
   padding-top: 750px;
+  padding-bottom: 50px;
   text-align: left;
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: hidden;
   font-family: 'Sansumi-DemiBold';
-  font-size: 15px;
+  font-size: 5em;
 }
 
 #tools ul {
