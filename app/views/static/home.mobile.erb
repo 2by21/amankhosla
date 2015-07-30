@@ -13,18 +13,21 @@
     <div class="row">
       <div class="col-sm-12" style="height: 100vh;">
         <div class="section1">
+          <div class='mobile-msg'>
+            <%= MobileText.first.msg.html_safe if MobileText.all.count == 1 %>
+          </div>
           <div class="down-arrow">
             <%= image_tag 'down_arrow_black.png' %>
-            <div style="display:none;" id="cheeky-message">My Cheeky Message Here</div>
+            <div style="display:none;" id="cheeky-message"><%= MobileText.first.scroll_msg.html_safe if MobileText.all.count == 1 %></div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="row">
+<!--     <div class="row">
       <div class="col-sm-12">
         <div class="section2">
-          <%= image_tag 'now_mobile.png', class: 'now-title' %>
+          <%#= image_tag 'now_mobile.png', class: 'now-title' %>
 
           <div class="post-container">
               <ul class="post-display">
@@ -45,7 +48,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <div class="row">
       <div class="col-sm-12">
@@ -70,108 +73,22 @@
               <iframe id="video-frame" width="75%" height="550px" src="//www.youtube.com/embed/<%= @video.link %>" frameborder="0" allowfullscreen></iframe>
             </div>
           <% end %>
-
-          <span id="video-prev"><img id="video-prev-img" src="assets/video-left.png"/></span>
-          <ul class="video-preview-ul">
-          <% @videos.each do |video| %>
-            <li class="video col-sm-3" data-url="<%= video.link %>" data-title="<%= video.title %>" data-body="<%= video.body %>">
-              <img class="video-preview" src="http://img.youtube.com/vi/<%= video.link %>/0.jpg"/>
-              <p class="list-video-title"><%= video.title %></p>
-            </li>
-          <% end %>
-          </ul>
-          <span id="video-nxt"><img id="video-nxt-img" src="assets/video-right.png"/></span>
           
+          <div style="text-align:center">
+            <span id="video-prev"><img id="video-prev-img" src="assets/video-left.png"/></span>
+            <span id="video-nxt"><img id="video-nxt-img" src="assets/video-right.png"/></span>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="row">
       <div class="col-sm-12">
-        <div class="section5">
-          <ul class="row tab-link-ul">
-            <li class="tab-link active-tab-link col-sm-4" data-tab="bio"><a>BIO</a></li>
-            <li class="tab-link col-sm-4" data-tab="photos"><a>PHOTOS</a></li>
-            <li class="tab-link col-sm-4" data-tab="tools"><a>TOOLS</a></li>
-          </ul><br>
-
+         
           <div id="bio" class="tab-content active-tab">
-            <%= @bio.text %>
+            <%= MobileText.first.text if MobileText.all.count == 1 %>
           </div>
 
-          <!-- begin photo tab -->
-          <div id="photos" class="tab-content" style="display: none;">
-            <div class="row">
-              <% @galleries.each_with_index do |gallery, index| %>
-                <div class="col-sm-6">
-                  <div>
-                    <img class="gallery-photo" data-gallery="<%= gallery.id %>" src="assets/gallery_cover_<%= index %>.png"/>
-                  </div>
-
-                  <div class="modal fade" id="gallery-<%= gallery.id %>">
-                    <%= image_tag 'gallery_logo.png', style: 'position: absolute; top: 15px; left: 15px; width: 80px; height: auto;' %>
-                    <%= image_tag 'gallery_x_button.png', style: 'position: absolute; top: 15px; right: 15px; width: 40px; height: auto;', class: 'x-button' %>
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-body">
-                          <div id="slider<%= index %>_container" style="position: relative; top: 0px; left: 0px; width: 800px;
-        height: 456px; background: #24262e; overflow: hidden;">
-
-                                        <!-- Loading Screen -->
-                            <div u="loading" style="position: absolute; top: 0px; left: 0px;">
-                              <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
-                                  background-color: #000000; top: 0px; left: 0px;width: 100%;height:100%;">
-                              </div>
-                              <div style="position: absolute; display: block; background: url(../img/loading.gif) no-repeat center center;
-                                  top: 0px; left: 0px;width: 100%;height:100%;">
-                              </div>
-                            </div>
-
-                            <!-- Slides Container -->
-                            <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 100%; height: 356px; overflow: hidden;">
-                              <% gallery.images.each do |image| %>
-                                <div>
-                                  <img u="image" src="<%= image.photo.url(:original) %>"/>
-                                  <img u="thumb" src="<%= image.photo.url(:medium) %>"/>
-                                </div>
-                              <% end %>
-                            </div>
-                                        
-                            <!-- Thumbnail Navigator Skin Begin -->
-                            <div u="thumbnavigator" class="jssort01" style="position: absolute; width: 800px; height: 100px; left:0px; bottom: 0px;">
-                            
-                              <div u="slides" style="cursor: move;">
-                                <div u="prototype" class="p" style="position: absolute; width: 72px; height: 72px; top: 0; left: 0;">
-                                  <div class=w><div u="thumbnailtemplate" style="width: 100%; height: 100%; border: none;position:absolute; top: 0; left: 0;"></div></div>
-                                  <div class=c>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-
-                          </div><!-- slider -->
-                        </div><!-- /.modal-body -->
-                      </div><!-- /.modal-content -->
-                    </div><!-- /.modal-dialog -->
-                  </div><!-- /.modal -->
-                </div><!-- col-sm-3 -->
-              <% end %>
-            </div>
-          </div>
-
-
-          <!-- end photo tab -->
-
-
-          <div id="tools" class="tab-content" style="display: none;">
-            <ul>
-              <% @tools.each_with_index do |tool, index| %>
-                <li class="tools <%= index.even? ? 'black' : 'white' %>"><%= link_to tool.text, tool.link %></li>
-              <% end %>
-            </ul>
-          </div>
-
-        </div>
       </div>
     </div>
 
@@ -179,14 +96,14 @@
       <div class="col-sm-12">
         <div class="section6">
           <div id="shows_and_social">
-            <h1 id="shows_clinics">SHOWS  /  CLINICS</h1>
+            <h1 id="shows_clinics"><a href="/home#shows">SHOWS  /  CLINICS</a></h1>
 
             <ul class="social-links">
-              <a href="#"><li id="facebook-icon" class="social-icon"></li></a>
-              <a href="#"><li id="twitter-icon" class="social-icon"></li></a>
-              <a href="#"><li id="youtube-icon" class="social-icon"></li></a>
-              <a href="#"><li id="bandcamp-icon" class="social-icon"></li></a>
-              <a href="#"><li id="email-icon" class="social-icon"></li></a>
+              <a href="http://<%= SocialMediaLink.find_by_name('Facebook').url %>"><li id="facebook-icon" class="social-icon"></li></a>
+              <a href="http://<%= SocialMediaLink.find_by_name('Twitter').url %>"><li id="twitter-icon" class="social-icon"></li></a>
+              <a href="http://<%= SocialMediaLink.find_by_name('YouTube').url %>"><li id="youtube-icon" class="social-icon"></li></a>
+              <a href="http://<%= SocialMediaLink.find_by_name('Bandcamp').url %>"><li id="bandcamp-icon" class="social-icon"></li></a>
+              <a href="mailto:amankhosla1@gmail.com"><li id="email-icon" class="social-icon"></li></a>
             </ul>
           </div>
         </div>

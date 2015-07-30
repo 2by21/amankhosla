@@ -1,0 +1,15 @@
+<%= form_for @mobile_text do |f| %>
+  <%= f.label :msg %>
+  <%= f.text_field :msg %>
+  <br/>
+  <br/>
+  <%= f.label :scroll_msg %>
+  <%= f.text_field :scroll_msg %>
+  <br/>
+  <br/>
+
+  <%= f.label :text %>
+  <%= f.text_area :text %>
+
+  <%= f.submit %>
+<% end %>

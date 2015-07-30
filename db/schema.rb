@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150729190753) do
+ActiveRecord::Schema.define(version: 20150730011357) do
 
   create_table "audios", force: true do |t|
     t.string   "sound_file_file_name"
@@ -61,6 +61,14 @@ ActiveRecord::Schema.define(version: 20150729190753) do
     t.string   "url"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "mobile_texts", force: true do |t|
+    t.text     "text"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "msg"
+    t.string   "scroll_msg"
   end
 
   create_table "posts", force: true do |t|

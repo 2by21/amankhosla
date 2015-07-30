@@ -1,0 +1,22 @@
+<% if MobileText.all.count == 1 %>
+  <p>
+    <b>Message:</b>
+    <br/>
+    <%= @mobile_text.msg %>
+    <br/>
+    <br/>
+    <b>Bio:</b>
+    <br/>
+    <%= @mobile_text.text %>
+    <br/>
+    <br/>
+    <b>Scroll Message:</b>
+    <%= @mobile_text.scroll_msg %>
+    <br/><br/>
+    <%= link_to 'EDIT', edit_mobile_text_path(@mobile_text) %>
+  </p>
+<% else %>
+
+<%= link_to 'Add Mobile Text', new_mobile_text_path %>
+
+<% end %>
