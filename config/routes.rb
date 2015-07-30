@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get '/mobile/shows-clinics' => 'static#showsclinics', as: 'mobile_shows'
+
   resources :mobile_texts
 
   resources :social_media_links
@@ -28,6 +30,7 @@ Rails.application.routes.draw do
   get '/posts/surrounding/:id' => 'posts#surrounding'
 
   get '/admin' => 'admins#index'
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

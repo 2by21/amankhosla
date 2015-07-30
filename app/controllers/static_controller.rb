@@ -19,6 +19,12 @@ class StaticController < ApplicationController
     @link4 = links[3]
   end
 
+  def showsclinics
+    @shows = Show.all.order(created_at: :desc)
+    @clinics = Clinic.all.order(created_at: :desc)
+    render 'shows-clinics.html.erb', :layout => false
+  end
+
   def welcome
     if is_mobile_device?
       redirect_to home_path and return

@@ -1,0 +1,119 @@
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'landing' %>
+
+
+<div class="section" id="section10">
+    <a class="anchor" id="shows"></a>
+
+    <div id="shows_clinics">
+        <div id="shows-link" class="hovered"></div> <div id="slash-link" src="assets/Slash-05.png"></div> <div id="clinics-link" src="assets/Shows-04.png"></div>
+    </div>
+
+    <div class="shows-wrapper">
+        <table class="table shows-table">
+            <thead>
+                <tr class="tbl-row">
+                    <th class="table-header">WHAT</th>
+                    <th class="table-header">WHERE</th>
+                    <th class="table-header">WHEN</th>
+                    <th class="table-header">HOW</th>
+                </tr>
+            </thead>
+            <tbody class="shows-table-body">
+                <% @shows.each do |show| %>
+                    <tr class="tbl-row">
+                        <td><%= show.what %></td>
+                        <td><%= show.where %></td>
+                        <td><%= show.when.strftime("%m/%d/%y %H%p") %></td>
+                        <td><a href="<%= show.how %>">BUY</a></td>
+                    </tr>
+                <% end %>
+            </tbody>
+
+        </table>
+    </div>
+
+    <div class="clinics-wrapper">
+       <table class="table clinics-table">
+        <thead>
+            <tr class="tbl-row">
+                <th>WHAT</th>
+                <th>WHERE</th>
+                <th>WHEN</th>
+                <th>HOW</th>
+            </tr>
+        </thead>
+        <tbody class="clinics-table-body">
+            <% @clinics.each do |c| %>
+                <tr class="tbl-row">
+                    <td><%= c.what %></td>
+                    <td><%= c.where %></td>
+                    <td><%= c.when.strftime("%m/%d/%y %H%p") %></td>
+                    <td><a href="<%= c.how %>">BUY</a></td>
+                </tr>
+            <% end %>
+        </tbody>
+        </table>
+    </div>
+    <div id="scrolls">
+        <img id="tbl-scroll-up" src="assets/archive-btn.png">
+        <img id="tbl-scroll-down" src="assets/archive-btn.png">
+    </div>
+</div>
+
+<script>
+  $(document).ready(function(){
+    $('.clinics-wrapper').hide();
+
+   $('#shows-link, #clinics-link').click(function(){
+      $('.clinics-wrapper').toggle();
+      $('.shows-wrapper').toggle();
+      $(this).toggleClass('hovered');
+      $(this).siblings().toggleClass('hovered');
+    });
+  });
+
+</script>
+
+<script>
+var amount = '';
+function scroll() {
+    $('.shows-table-body').animate({
+        scrollTop: amount
+    }, 100, 'linear',function() {
+        if (amount != '') {
+            scroll();
+        }
+    });
+}
+
+function scroll2() {
+    $('.clinics-table-body').animate({
+        scrollTop: amount
+    }, 100, 'linear',function() {
+        if (amount != '') {
+            scroll2();
+        }
+    });
+}
+
+$(document).ready( function(){
+
+    $('#tbl-scroll-up').hover(function() {
+        amount = '+=10';
+        scroll();
+        scroll2();
+    }, function() {
+        amount = '';
+    });
+    $('#tbl-scroll-down').hover(function() {
+        amount = '-=10';
+        scroll();
+        scroll2();
+    }, function() {
+        amount = '';
+    });
+
+});
+</script>
+ 
