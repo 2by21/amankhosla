@@ -16,6 +16,7 @@
           <div class='mobile-msg'>
             <%= MobileText.first.msg.html_safe if MobileText.all.count == 1 %>
           </div>
+          <br/>
           <div class="down-arrow">
             <%= image_tag 'down_arrow_black.png' %>
             <div style="display:none;" id="cheeky-message"><%= MobileText.first.scroll_msg.html_safe if MobileText.all.count == 1 %></div>
