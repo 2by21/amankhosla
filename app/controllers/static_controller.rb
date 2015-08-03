@@ -1,6 +1,6 @@
 class StaticController < ApplicationController
-  has_mobile_fu
   before_filter :force_tablet_html
+  has_mobile_fu
 
   def home
     @posts = Post.all
