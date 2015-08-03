@@ -7,8 +7,8 @@
 
 $ ->
   $('.down-arrow img').click (e) ->
-    $(this).fadeOut "slow", (e) ->
-      $('#cheeky-message').fadeIn("slow")
+    $(this).fadeOut "fast", (e) ->
+      $('#cheeky-message').fadeIn("fast")
 
   $("#video-nxt").click ->
     index = $(".showing").data('index');
