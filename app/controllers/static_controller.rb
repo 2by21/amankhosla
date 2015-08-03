@@ -1,5 +1,6 @@
 class StaticController < ApplicationController
   has_mobile_fu
+  before_filter :force_tablet_html
 
   def home
     @posts = Post.all
@@ -29,6 +30,13 @@ class StaticController < ApplicationController
       redirect_to home_path and return
     end
     render layout: 'landing' and return
+  end
+
+
+  private
+
+  def force_tablet_html
+    session[:tablet_view] = false
   end
   
 end
